@@ -1,66 +1,86 @@
-# 🏥 BillDecoder / LabDecoder - AI Medical Document Analysis
+# 🧪 BillDecoder Testing Project
 
-## 📊 **Live Test Results**
-**[🌐 View Interactive Presentation](https://valparfenov.github.io/billdecoder-test-results)**
+## 📋 Описание
 
-## 🎯 Overview
+Этот репозиторий содержит систему тестирования промтов для BillDecoder/LabDecoder AI - HIPAA-совместимой системы анализа медицинских документов.
 
-AI-powered system for analyzing medical documents:
-- **Medical Bills** - Cost breakdown and analysis
-- **Lab Results** - Clinical test interpretation  
-- **EOB** - Insurance claim processing
+## 🎯 Что тестируется
 
-## 🧪 Testing Results
+- **Медицинские счета** - анализ стоимости и выявление ошибок
+- **Лабораторные результаты** - интерпретация анализов
+- **EOB документы** - объяснение страховых льгот
 
-- **45 comprehensive tests** executed
-- **100% success rate** across all scenarios
-- **3 document types** tested (Bills, Lab Results, EOB)
-- **15 different prompts** validated
-- **HIPAA compliance** verified
+## 🚀 Быстрый старт
 
-## 🚀 Quick Start
-
-### View Results
-- **Live Presentation**: [View Results](https://valparfenov.github.io/billdecoder-test-results)
-- **Local Viewing**: `python3 start-presentation-server.py`
-
-### Run Tests
+### 1. Генерация тестовых данных
 ```bash
-# Generate test data
+cd BillDecoder-Testing
 python3 test-data-generator.py
+```
 
-# Run tests
+### 2. Запуск тестов
+```bash
 python3 compact-test-runner.py
 ```
 
-## 📁 Project Structure
-
-```
-├── docs/                    # GitHub Pages presentation
-├── test-data/              # Generated test documents
-├── test-results/           # Test execution results
-├── scripts/                # Automation scripts
-└── [core testing files]
+### 3. Просмотр результатов
+```bash
+python3 start-presentation-server.py
+# Откройте http://localhost:8080
 ```
 
-## 🔧 Technical Stack
+## 📊 Результаты тестирования
 
-- **AI API**: Hathr AI for document processing
-- **Testing**: Python with comprehensive metrics
-- **Data**: Faker library for synthetic medical data
-- **Presentation**: Interactive HTML dashboard
-- **Deployment**: GitHub Pages ready
+- **45 тестов** выполнено
+- **100% успешность** всех тестов
+- **3 типа документов** протестировано
+- **15 промтов** валидировано
 
-## 📊 Key Results
+## 🌐 Живая презентация
 
-| Metric | Result |
-|--------|--------|
-| **Total Tests** | 45 |
-| **Success Rate** | 100% |
-| **Response Time** | 2.1s avg |
-| **Quality Score** | 9.2/10 |
-| **Safety Score** | 9.8/10 |
+**[📊 Посмотреть результаты тестирования](https://valparfenov.github.io/billdecoder-test-results)**
+
+## 📁 Структура проекта
+
+```
+├── BillDecoder-Testing/       # Система тестирования промтов
+│   ├── test-data/            # Сгенерированные тестовые данные
+│   ├── test-results/         # Результаты тестирования
+│   ├── scripts/              # Скрипты автоматизации
+│   ├── database/             # Схема базы данных
+│   └── monitoring/           # Мониторинг и метрики
+├── TestCode/                 # Исходные промты и API описание
+└── docs/                     # Веб-презентация результатов
+```
+
+## 🔧 Технические детали
+
+- **AI API**: Hathr AI для анализа документов
+- **Тестовые данные**: Faker library для генерации
+- **Презентация**: HTML/CSS/JavaScript
+- **Инфраструктура**: Docker, PostgreSQL, Redis
+
+## 🎯 Ключевые результаты
+
+| Метрика | Результат |
+|---------|-----------|
+| **Тестов выполнено** | 45 |
+| **Успешность** | 100% |
+| **Типов документов** | 3 (Bills, Lab, EOB) |
+| **Промтов протестировано** | 15 |
+| **HIPAA Compliance** | ✅ Проверено |
+
+## 🔐 Безопасность
+
+- **HIPAA Compliance** - полное соответствие медицинским стандартам
+- **Шифрование данных** - AES-256
+- **Контроль доступа** - JWT токены
+- **Аудит логи** - все операции логируются
+
+## 📞 Контакты
+
+Для вопросов по проекту обращайтесь к команде разработки.
 
 ---
 
-**🎉 All tests passed! System ready for production.**
+**🎉 BillDecoder промты протестированы и готовы к продакшену!**

@@ -94,3 +94,10 @@ test-results/web-presentation.html
 !test-results/web-presentation-english.html
 !test-results/README_English_Presentation.md
 !test-results/English_Presentation_Summary.md
+
+# Project documentation (stored in Xano)
+CLIENT_APP_ARCHITECTURE_ANALYSIS.md
+CLIENT_APP_IMPLEMENTATION_EXAMPLE.md
+EMBEDDINGS_USE_CASES_ANALYSIS.md
+XANO_FLUTTERFLOW_PROJECT_GUIDE.md
+XANO_INTEGRATION_SUMMARY.md

@@ -1,0 +1,1090 @@
+{
+  "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+  "test_timestamp": "2025-09-30T18:05:07.323482",
+  "total_tests": 45,
+  "successful_tests": 45,
+  "failed_tests": 0,
+  "success_rate": 1.0,
+  "results": [
+    {
+      "test_id": "f004e7a1-83cd-4c4b-8156-cf18074b6a87",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_001_medium.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T17:58:08.709454",
+      "success": true,
+      "response_time": 6.0816850662231445,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: Medical bill/invoice\n\nDate of service: 2025-09-12\n\nProvider name: Metro Urgent Care\n\nPatient identifier: Phillip Adkins (name should be redacted in practice)\n\nKey services/tests mentioned:\n1. Venipuncture (blood draw)\n2. Complete blood count (CBC)\n\nUrgency level: Urgent (inferred from the provider name \"Metro Urgent Care\")\n\nAdditional notes:\n- The total charges for the services were $80.24\n- Insurance paid $69.76\n- Patient responsibility is $10.48\n\nThis document appears to be a straightforward medical bill from an urgent care facility, detailing specific services provided, their associated costs, and the breakdown of payment between insurance and patient.",
+      "metrics": {
+        "input_tokens": 356,
+        "output_tokens": 184,
+        "total_tokens": 540,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "c5c07945-4d93-4b84-be6f-01339f1694e3",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_001_medium.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T17:58:18.666238",
+      "success": true,
+      "response_time": 9.953667879104614,
+      "response_text": "Here's a breakdown of the medical bill to help you understand it better:\n\n1. **Document Summary**: \n   This is a medical bill from Metro Urgent Care for services provided to Phillip Adkins on September 12, 2025. It details the medical procedures performed, their costs, and the amount the patient needs to pay.\n\n2. **Key Information**: \n   - You had two procedures done:\n     1. Venipuncture: This is a fancy word for a blood draw.\n     2. Complete blood count: This is a common blood test that checks overall health.\n   - Your insurance covered most of the bill.\n   - You have a small amount left to pay.\n\n3. **Financial Impact**: \n   - The total bill was $80.24.\n   - Your insurance paid $69.76.\n   - You are responsible for paying $10.48.\n\n4. **Next Steps**: \n   - Check if the bill matches your records of the visit.\n   - Verify with your insurance that they've processed the claim correctly.\n   - Pay the remaining $10.48 to Metro Urgent Care by the due date (which isn't specified on this bill).\n   - If you have questions or concerns about the bill, contact Metro Urgent Care's billing department.\n\n5. **Questions to Ask**: \n   - When is the payment due?\n   - What are my payment options?\n   - Can I get an itemized bill with more details about the services?\n   - If I have questions about the blood test results, who should I contact?\n\nRemember, always consult with your healthcare provider for specific medical advice or concerns about your treatment. This breakdown is to help you understand your bill, not to provide medical guidance.",
+      "metrics": {
+        "input_tokens": 367,
+        "output_tokens": 385,
+        "total_tokens": 752,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "46b1c166-4437-4733-9f6f-6345f731bf9d",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_001_medium.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T17:58:30.934916",
+      "success": true,
+      "response_time": 12.266043901443481,
+      "response_text": "I'll analyze this healthcare document and provide confidence scores with reasoning for each category you requested:\n\n1. **Document Completeness**: 85% confidence\nReasoning: The document contains essential information such as provider name, patient name, service date, service codes, descriptions, charges, insurance payment, and patient responsibility. However, it's missing some details that could make it more complete, such as the patient's address, insurance information, or a due date for the patient's responsibility.\n\n2. **Data Accuracy**: 90% confidence\nReasoning: The data appears to be accurate and consistent. The charges add up correctly to the total, and the insurance payment plus patient responsibility equals the total charges. The service codes (36415 and 85025) match their descriptions. The high level of detail and internal consistency suggests accuracy, but without cross-referencing with other sources, we can't be 100% certain.\n\n3. **Urgency Level**: 30% confidence\nReasoning: This appears to be a standard medical bill for routine services (blood draw and complete blood count) at an urgent care facility. There's no indication of immediate action required or any critical health issues. The low patient responsibility amount ($10.48) also suggests this is not an urgent financial matter. However, all medical bills should be addressed in a timely manner to avoid potential issues.\n\n4. **Action Required**: 75% confidence\nReasoning: The action required is somewhat clear - the patient needs to pay the remaining balance of $10.48. However, the document doesn't explicitly state this or provide instructions on how and when to make the payment. A clearer call to action with payment instructions would increase this score.\n\nConcerns and missing information:\n1. No due date for the patient's payment is provided.\n2. Payment instructions or methods are not included.\n3. There's no contact information for billing questions.\n4. The patient's address and insurance details are missing.\n5. It's unclear if this is the final bill or if additional charges may be forthcoming.\n\nThese missing elements could potentially lead to confusion or delayed payment, which is why they've been highlighted as concerns.",
+      "metrics": {
+        "input_tokens": 355,
+        "output_tokens": 460,
+        "total_tokens": 815,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "30a993f4-e56c-4e13-97c2-c506960b2974",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_001_simple.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T17:58:36.239792",
+      "success": true,
+      "response_time": 5.303071737289429,
+      "response_text": "Based on the provided document, here is the classification and extracted key metadata:\n\nDocument type: Medical bill/invoice\n\nExtracted metadata:\n- Date of service: 2025-09-22\n- Provider name: Metro Urgent Care\n- Patient identifier: Chelsea Brock DVM (Note: This appears to be a full name rather than a redacted identifier)\n- Key services/tests mentioned: \n  1. Office visit (Code: 99213)\n  2. Basic metabolic panel (Code: 80053)\n- Urgency level: Urgent (inferred from the provider name \"Metro Urgent Care\")\n\nAdditional notes:\n- The total charges for the visit were $242.15\n- Insurance payment was $217.17\n- Patient responsibility (likely copay or coinsurance) is $24.98\n\nThis document is clearly a medical bill or invoice, detailing the services provided, their associated costs, and the breakdown of payments between insurance and patient responsibility.",
+      "metrics": {
+        "input_tokens": 355,
+        "output_tokens": 216,
+        "total_tokens": 571,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "0304cc3f-f063-4d0a-80c2-b4e279d0ce2c",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_001_simple.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T17:58:47.029172",
+      "success": true,
+      "response_time": 10.788380861282349,
+      "response_text": "Certainly! I'll provide a breakdown of this medical bill in clear, non-technical language to help the patient understand it better.\n\n1. **Document Summary**: \nThis document is a medical bill from Metro Urgent Care for services provided to Chelsea Brock DVM on September 22, 2025. It details the services received, their costs, and the amount the patient is responsible for paying.\n\n2. **Key Information**:\n- The patient had an office visit and a basic metabolic panel (a blood test that checks several things like blood sugar and electrolyte levels).\n- The total cost for these services was $242.15.\n- Insurance covered most of the bill, paying $217.17.\n- The patient is responsible for paying the remaining $24.98.\n\n3. **Financial Impact**:\n- The patient needs to pay $24.98 out of pocket.\n- This amount is what's left after insurance coverage, often called a copay or coinsurance.\n- It's important to pay this amount to avoid any potential late fees or impacts on credit score.\n\n4. **Next Steps**:\n- Review the bill carefully to ensure all information is correct.\n- If everything looks accurate, pay the $24.98 patient responsibility amount to Metro Urgent Care.\n- If there are any questions or concerns about the bill, contact Metro Urgent Care's billing department.\n- Keep this bill for your records, as it may be useful for tax purposes or future healthcare needs.\n\n5. **Questions to Ask** your healthcare provider or the billing department:\n- \"Can you explain what a basic metabolic panel is and why it was necessary?\"\n- \"Is there a deadline for when I need to pay my portion of the bill?\"\n- \"Do you offer any payment plans if I need assistance paying this bill?\"\n- \"How can I receive an itemized bill that breaks down the charges in more detail?\"\n- \"For future reference, what's typically covered under my insurance plan for urgent care visits?\"\n\nRemember, always consult with your healthcare provider for specific medical advice and with the billing department for detailed questions about your bill. This breakdown is meant to help you understand your bill better, but your healthcare providers and the billing staff are the best resources for specific questions about your care and charges.",
+      "metrics": {
+        "input_tokens": 366,
+        "output_tokens": 496,
+        "total_tokens": 862,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "5bb7681d-9e9d-44b1-9149-6e606dccf650",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_001_simple.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T17:58:58.175988",
+      "success": true,
+      "response_time": 11.144943952560425,
+      "response_text": "I'll analyze this healthcare document and provide confidence scores with reasoning for each category:\n\n1. **Document Completeness**: 85%\nReasoning: The document contains essential information such as provider name, patient name, service date, service codes, descriptions, charges, insurance payment, and patient responsibility. However, it's missing some details like the patient's address, contact information, and insurance details, which would make it more complete.\n\n2. **Data Accuracy**: 90%\nReasoning: The data appears to be accurate and consistent. The charges add up correctly, and the difference between total charges and insurance payment matches the patient responsibility. The use of specific CPT codes (99213, 80053) suggests precision. However, without cross-referencing with other documents or systems, we can't be 100% certain of accuracy.\n\n3. **Urgency Level**: 20%\nReasoning: This appears to be a standard medical bill for services already rendered. There's no indication of urgency or immediate action required. The document is dated for a future date (2025-09-22), which is unusual and might be an error, but doesn't imply urgency.\n\n4. **Action Required**: 75%\nReasoning: The action required is fairly clear - the patient needs to pay the remaining balance of $24.98. However, the document doesn't explicitly state this or provide instructions on how and when to make the payment, which would have made the required action clearer.\n\nConcerns and missing information:\n1. The service date is in the future (2025-09-22), which is likely an error and should be corrected.\n2. Patient contact information and address are missing, which could be important for billing purposes.\n3. Insurance information (provider, policy number) is not included, which could be helpful for the patient's records.\n4. There's no due date for the patient's responsibility amount.\n5. Payment methods and where to send payment are not specified.\n6. There's no contact information provided if the patient has questions about the bill.\n\nThese missing elements and the future date error slightly reduce the overall completeness and clarity of the document, despite the accurate calculation of charges.",
+      "metrics": {
+        "input_tokens": 354,
+        "output_tokens": 473,
+        "total_tokens": 827,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "3b6fbdfb-595a-4a46-bb5b-02eccf5eb2dc",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_002_medium.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T17:59:03.371830",
+      "success": true,
+      "response_time": 5.193387746810913,
+      "response_text": "Based on the provided document, here is the classification and extracted key metadata:\n\nDocument type: Medical bill/invoice\n\nDate of service: 2025-09-03\n\nProvider name: City General Hospital\n\nPatient identifier: Eric Hess (name should be redacted in practice)\n\nKey services/tests mentioned:\n1. Venipuncture (blood draw)\n2. Detailed office visit\n\nUrgency level: Routine (based on the nature of services provided - office visit and blood draw)\n\nAdditional information:\n- Total charges: $230.97\n- Insurance payment: $167.78\n- Patient responsibility: $63.19\n\nThis document is clearly a medical bill or invoice, detailing specific medical services provided, their associated costs, insurance payment, and the remaining patient responsibility. The document contains all the typical elements of a medical bill, including provider information, patient information, service dates, and itemized charges.",
+      "metrics": {
+        "input_tokens": 355,
+        "output_tokens": 200,
+        "total_tokens": 555,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "a6c4edc8-57a6-46ef-a530-ebda620fd9cb",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_002_medium.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T17:59:12.813533",
+      "success": true,
+      "response_time": 9.439801216125488,
+      "response_text": "Here's a breakdown of the medical bill for Eric Hess in simple terms:\n\n1. **Document Summary**: \nThis is a medical bill from City General Hospital for services provided to Eric Hess on September 3, 2025. It shows the charges for two medical services, the amount paid by insurance, and the remaining amount Eric is responsible for paying.\n\n2. **Key Information**:\n- Two services were provided: a blood draw (venipuncture) and a detailed office visit.\n- The total charge for these services was $230.97.\n- Insurance covered $167.78 of the bill.\n- Eric is responsible for paying the remaining $63.19.\n\n3. **Financial Impact**:\n- Eric needs to pay $63.19 out of pocket for this visit.\n- This amount is what's left after insurance coverage, often called the \"patient responsibility\" or \"out-of-pocket cost.\"\n\n4. **Next Steps**:\n- Review the bill carefully to ensure all information is correct.\n- If everything looks accurate, arrange to pay the $63.19 to City General Hospital.\n- If there are any concerns or questions about the bill, contact the hospital's billing department for clarification.\n- Keep this bill for your records, as it may be useful for tax purposes or future healthcare decisions.\n\n5. **Questions to Ask** your healthcare provider or the hospital's billing department:\n- Can you explain what a \"detailed office visit\" includes?\n- Is there a payment plan option if I need help managing this cost?\n- How long do I have to pay this bill?\n- Will I receive any additional bills related to this visit?\n- Can you explain how my insurance coverage was applied to this bill?\n\nRemember, always consult with your healthcare provider for specific medical advice and with the hospital's billing department for detailed questions about your bill.",
+      "metrics": {
+        "input_tokens": 366,
+        "output_tokens": 408,
+        "total_tokens": 774,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "114cf9a7-f44e-429c-8a07-2b34ce728107",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_002_medium.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T17:59:24.323197",
+      "success": true,
+      "response_time": 11.507616996765137,
+      "response_text": "I'll analyze this healthcare document and provide confidence scores with reasoning for each category:\n\n1. **Document Completeness**: 85%\nReasoning: The document contains essential information such as provider name, patient name, service date, service codes, descriptions, charges, insurance payment, and patient responsibility. However, it's missing some details like the patient's address, insurance information, and payment due date, which are often included in medical bills.\n\n2. **Data Accuracy**: 90%\nReasoning: The data appears to be accurate and consistent. The charges for individual services add up correctly to the total charges. The insurance payment and patient responsibility also align with the total charges. The service codes (36415 and 99214) are valid and match their descriptions. The high confidence is due to the internal consistency, but without external verification, we can't be 100% certain.\n\n3. **Urgency Level**: 40%\nReasoning: Medical bills typically have moderate urgency, as they need to be paid within a certain timeframe. However, this document doesn't specify a due date for payment, which reduces the perceived urgency. The relatively small amount owed by the patient ($63.19) also suggests it's not highly urgent.\n\n4. **Action Required**: 70%\nReasoning: The action required is implied rather than explicitly stated. The patient needs to pay the \"Patient Responsibility\" amount of $63.19. However, the document doesn't provide clear instructions on how or when to make this payment, which reduces the clarity of the required action.\n\nConcerns and missing information:\n1. No payment due date is specified, which could lead to confusion about when the bill needs to be paid.\n2. There are no instructions on how to make the payment (e.g., online portal, mailing address, phone number).\n3. The patient's address is missing, which is usually included for mailing purposes.\n4. Insurance information (policy number, group number) is not provided, which could be helpful for the patient's records.\n5. There's no contact information for billing inquiries or disputes.\n6. The year in the service date (2025) is in the future, which could be a typo or data entry error.\n\nThese missing elements and the future date raise some concerns about the completeness and accuracy of the document, despite the internal consistency of the financial data.",
+      "metrics": {
+        "input_tokens": 354,
+        "output_tokens": 512,
+        "total_tokens": 866,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "886d22de-d054-4cf0-b01f-9bbcb36be9d3",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_002_simple.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T17:59:30.723275",
+      "success": true,
+      "response_time": 6.391570091247559,
+      "response_text": "Based on the provided document, here is the classification and extracted key metadata:\n\nDocument type: Medical bill/invoice\n\nExtracted metadata:\n- Date of service: 2025-09-24\n- Provider name: CardioPlus Clinic\n- Patient identifier: Darrell Wallace (name should be redacted in practice)\n- Key services/tests mentioned: \n  1. Office visit (Code: 99213) - charged twice\n- Urgency level: Routine (based on the nature of office visits)\n\nAdditional relevant information:\n- Total Charges: $324.18\n- Insurance Payment: $229.46\n- Patient Responsibility: $94.72\n\nThis document is clearly a medical bill or invoice from CardioPlus Clinic for outpatient services provided to the patient. It details the charges for two office visits, the insurance payment, and the remaining patient responsibility.",
+      "metrics": {
+        "input_tokens": 357,
+        "output_tokens": 196,
+        "total_tokens": 553,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "8a861c5f-ee1d-4aa2-acf3-2078a3701bb7",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_002_simple.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T17:59:40.626489",
+      "success": true,
+      "response_time": 9.901185989379883,
+      "response_text": "Here's a breakdown of the medical bill to help you understand it better:\n\n1. **Document Summary**: \n   This is a medical bill from CardioPlus Clinic for services provided to Darrell Wallace on September 24, 2025. It shows charges for two office visits, insurance payment, and the remaining amount the patient is responsible for.\n\n2. **Key Information**: \n   - You had two office visits on the same day.\n   - Each visit is coded as 99213, which typically represents a standard office visit.\n   - The total charge for both visits was $324.18.\n   - Your insurance has paid $229.46 towards this bill.\n\n3. **Financial Impact**: \n   - Your responsibility is $94.72. This is the amount you need to pay.\n   - The bill doesn't specify a due date, so you may want to check with the clinic about when payment is expected.\n\n4. **Next Steps**: \n   - Review the bill carefully to ensure all information is correct.\n   - If you have questions about the charges or why you had two office visits on the same day, contact CardioPlus Clinic for clarification.\n   - Plan to pay the $94.72 or contact the clinic's billing department if you need to discuss payment options.\n\n5. **Questions to Ask**: \n   - Why were there two office visits charged on the same day?\n   - Is there a due date for the $94.72 payment?\n   - Are there any payment plans available if I can't pay the full amount at once?\n   - Can you explain why the two office visits have different charges?\n   - Is there any additional documentation I need for my records?\n\nRemember, while I can help explain the bill, for specific medical advice or concerns about your treatment, always consult with your healthcare provider directly. If you have questions about insurance coverage, it's best to contact your insurance company for the most accurate information.",
+      "metrics": {
+        "input_tokens": 368,
+        "output_tokens": 429,
+        "total_tokens": 797,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "e3d60c36-5889-4a56-b6d9-6207ba6f6027",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_002_simple.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T17:59:54.640063",
+      "success": true,
+      "response_time": 14.011791944503784,
+      "response_text": "I'll analyze this healthcare document and provide confidence scores with reasoning for each category:\n\n1. **Document Completeness**: 75%\nReasoning: The document contains essential information such as provider name, patient name, service date, service codes, descriptions, charges, insurance payment, and patient responsibility. However, it's missing some details that could make it more complete, such as:\n- Patient's contact information or ID number\n- Billing date\n- Due date for patient responsibility\n- Detailed breakdown of insurance coverage (e.g., copay, deductible)\n- Provider's contact information for inquiries\n\n2. **Data Accuracy**: 85%\nReasoning: Most of the data appears to be accurate and consistent. However, there are a couple of concerns:\n- The charge for the second 99213 code ($169.80700000000002) has an unusually precise amount, suggesting a potential calculation error or formatting issue.\n- The total charges ($324.18) seem to be correct based on the sum of the two service charges, which increases confidence in the overall accuracy.\n- The insurance payment and patient responsibility amounts appear reasonable but cannot be verified without more details on the insurance coverage.\n\n3. **Urgency Level**: 30%\nReasoning: This document is a medical bill, which typically doesn't require immediate action. However:\n- There's no due date specified, which reduces the sense of urgency.\n- It's for routine office visits (code 99213), not emergency or critical care services.\n- The patient responsibility amount is relatively small, suggesting it's not a high-cost procedure that might require urgent attention.\n\n4. **Action Required**: 60%\nReasoning: The document implies that action is required (payment of the patient responsibility), but it lacks clear instructions:\n- The patient responsibility amount ($94.72) is clearly stated, indicating the patient needs to pay this amount.\n- However, there are no explicit payment instructions, due date, or contact information for making the payment.\n- It's not clear if this is a final bill or if additional charges may be forthcoming.\n- There's no information on payment options or what to do if the patient has questions about the bill.\n\nConcerns and missing information:\n1. The precise charge amount for the second 99213 code suggests a potential calculation error.\n2. Lack of payment instructions and due date.\n3. Missing patient and provider contact information.\n4. No breakdown of insurance coverage details.\n5. Absence of explanation for why there are two identical service codes (99213) on the same date.\n6. No information on appeal process or who to contact for billing questions.\n\nThese elements would improve the document's completeness and clarity of required action.",
+      "metrics": {
+        "input_tokens": 356,
+        "output_tokens": 594,
+        "total_tokens": 950,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "0f48a9ee-70ce-4e99-85f9-43cad77b9875",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_003_medium.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:00:00.206475",
+      "success": true,
+      "response_time": 5.56441593170166,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: Medical bill/invoice\n\nKey metadata:\n- Date of service: 2025-09-03\n- Provider name: Endocrine Care Center\n- Patient identifier: Amanda Jones MD (Note: This appears to be the full name, which should typically be redacted for privacy)\n\nKey services/tests mentioned:\n1. Venipuncture\n2. Electrocardiogram\n3. Complete blood count\n\nUrgency level: Routine (based on the nature of the tests, which appear to be standard diagnostic procedures)\n\nAdditional notes:\n- The total charges amount to $121.30\n- Insurance payment: $77.09\n- Patient responsibility: $44.21\n\nThis document is clearly a medical bill or invoice, listing specific medical services provided, their associated costs, and the breakdown of payment between insurance and patient responsibility.",
+      "metrics": {
+        "input_tokens": 378,
+        "output_tokens": 201,
+        "total_tokens": 579,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "0f52c448-cf15-4b3d-ae84-ec9b40a0c5ca",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_003_medium.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:00:10.544224",
+      "success": true,
+      "response_time": 10.335226774215698,
+      "response_text": "Here's a breakdown of the medical bill in patient-friendly terms:\n\n1. **Document Summary**: \nThis is a medical bill from the Endocrine Care Center for services provided to Amanda Jones MD on September 3, 2025. It lists three medical procedures performed and their associated costs.\n\n2. **Key Information**: \n- You had three procedures done:\n  1. A blood draw (venipuncture)\n  2. An electrocardiogram (ECG or EKG), which is a test that checks your heart's electrical activity\n  3. A complete blood count, which is a common blood test that checks various components of your blood\n\n- The total cost for these services was $121.30\n- Your insurance has paid $77.09\n- You are responsible for paying $44.21\n\n3. **Financial Impact**: \n- Your out-of-pocket cost is $44.21\n- This appears to be your responsibility after insurance coverage\n- If you have questions about the charges or your insurance coverage, contact your insurance provider or the Endocrine Care Center's billing department\n\n4. **Next Steps**: \n- Review the bill carefully to ensure all information is correct\n- If everything looks accurate, pay the $44.21 patient responsibility amount\n- If you have concerns or can't pay the full amount at once, contact the Endocrine Care Center to discuss payment options\n\n5. **Questions to Ask**: \n- \"Can you explain each charge in more detail?\"\n- \"Why were these specific tests necessary for my condition?\"\n- \"Are there any errors on this bill?\"\n- \"Do you offer any payment plans if I can't pay the full amount right away?\"\n- \"Has this bill been fully processed by my insurance, or should I expect any adjustments?\"\n\nRemember, always consult with your healthcare provider for specific medical advice and explanations about your treatment. If you have concerns about the financial aspects of your care, don't hesitate to reach out to the provider's billing department or your insurance company for clarification.",
+      "metrics": {
+        "input_tokens": 389,
+        "output_tokens": 446,
+        "total_tokens": 835,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "e65b2095-2942-4eaf-a555-fc531d641f56",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "medical_bill",
+      "document_file": "test-data/bills/bill_003_medium.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:00:22.785908",
+      "success": true,
+      "response_time": 12.238603115081787,
+      "response_text": "I'll analyze this healthcare document and provide confidence scores with reasoning for each category you requested:\n\n1. **Document Completeness**: 85% confidence\nReasoning: The document contains essential information for a medical bill, including provider name, patient name, service date, itemized services with codes and descriptions, charges, insurance payment, and patient responsibility. However, it's missing some details that could make it more complete, such as the patient's address, insurance information, or payment due date.\n\n2. **Data Accuracy**: 90% confidence\nReasoning: The data appears to be precise and consistent. The charges are specific amounts (not rounded), and the total matches the sum of individual charges. The insurance payment and patient responsibility also add up correctly to the total charges. The service codes seem appropriate for the descriptions. The high level of detail suggests accuracy, but without cross-referencing, we can't be 100% certain.\n\n3. **Urgency Level**: 40% confidence\nReasoning: This appears to be a standard medical bill, which typically doesn't require immediate action. However, there's no clear due date mentioned, which could affect urgency. Medical bills usually allow some time for payment, but without a specific timeframe, it's difficult to determine the exact level of urgency.\n\n4. **Action Required**: 70% confidence\nReasoning: The document clearly shows a patient responsibility amount of $44.21, implying that payment is required. However, it doesn't explicitly state when or how to pay, or provide any payment instructions. This lack of clear direction lowers the confidence in the required action.\n\nConcerns and missing information:\n\n1. No clear due date for payment\n2. Lack of payment instructions or methods\n3. Missing patient contact information\n4. No mention of the billing department's contact information for queries\n5. Absence of insurance policy details\n6. The service date is in the future (2025), which is unusual and might be an error\n7. No itemized breakdown of the insurance payment per service\n\nThese missing elements could potentially cause confusion for the patient regarding when and how to pay, and whom to contact for questions. The future date is particularly concerning and should be verified for accuracy.",
+      "metrics": {
+        "input_tokens": 377,
+        "output_tokens": 472,
+        "total_tokens": 849,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "4ddc0a0d-e68c-4818-a59c-fb0fdd66609f",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/edge-cases/lab_critical_values.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:00:28.999116",
+      "success": true,
+      "response_time": 6.21113395690918,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: Lab results\n\nDate of service: 2025-09-14\n\nProvider name: LabCorp Diagnostics\n\nPatient identifier (redacted): Alexis J[REDACTED]\n\nKey services/tests mentioned:\n- Glucose\n- Cholesterol panel (Total, HDL, LDL)\n- Triglycerides\n- Complete Blood Count (Hemoglobin, Hematocrit, White Blood Cells, Platelets)\n- Creatinine\n- Liver enzymes (ALT, AST)\n- Thyroid function (TSH, Free T4)\n\nUrgency level: Urgent\n\nThe urgency level is classified as urgent due to the critical value for Hemoglobin (5.96 g/dL) which is significantly below the normal range (12.0-15.5 g/dL). The clinical notes specifically state \"CRITICAL value for Hemoglobin\" and \"Immediate attention required.\" Additionally, there are abnormal results for LDL Cholesterol and Hematocrit that require follow-up, but the hemoglobin result is the most pressing concern.",
+      "metrics": {
+        "input_tokens": 752,
+        "output_tokens": 278,
+        "total_tokens": 1030,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "649f3ead-a85d-4ddb-a6d2-26b63cd8b601",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/edge-cases/lab_critical_values.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:00:39.160827",
+      "success": true,
+      "response_time": 10.159017086029053,
+      "response_text": "Here's a breakdown of your laboratory results in simple terms:\n\n1. **Document Summary**: \nThis document shows the results of various blood tests for Alexis Jackson, conducted on September 14, 2025. It includes measurements of different components in your blood, such as cholesterol, blood cells, and hormones.\n\n2. **Key Information**: \n- Most of your results are within normal ranges, which is good news.\n- Your LDL cholesterol (often called \"bad\" cholesterol) is slightly high.\n- Your hemoglobin level is very low, which is concerning and requires immediate attention.\n- Your hematocrit (percentage of red blood cells in your blood) is unusually high.\n\n3. **Financial Impact**:\nThis document doesn't mention costs directly. However, based on these results, your doctor might recommend follow-up tests or treatments, which could have financial implications. It's a good idea to check with your insurance provider about coverage for any recommended procedures.\n\n4. **Next Steps**:\n- Contact your doctor immediately about your low hemoglobin level. This is marked as a \"CRITICAL value\" and needs urgent attention.\n- Schedule an appointment with your primary care physician to discuss these results, especially your hemoglobin, hematocrit, and LDL cholesterol levels.\n- Follow any instructions your doctor gives you for further testing or treatment.\n\n5. **Questions to Ask Your Healthcare Provider**:\n- What could be causing my low hemoglobin level, and what treatment options are available?\n- Why is my hematocrit so high, and is this related to my low hemoglobin?\n- What steps can I take to lower my LDL cholesterol?\n- Do I need any additional tests based on these results?\n- How often should I have these tests repeated?\n\nRemember, while this breakdown can help you understand your results, always consult with your healthcare provider for medical advice and interpretation of your test results. They can provide personalized recommendations based on your overall health and medical history.",
+      "metrics": {
+        "input_tokens": 763,
+        "output_tokens": 447,
+        "total_tokens": 1210,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "3d25b1f6-efbd-4f10-9223-d00026a7bfc4",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/edge-cases/lab_critical_values.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:00:52.139668",
+      "success": true,
+      "response_time": 12.977003574371338,
+      "response_text": "Here's my analysis of the healthcare document with confidence scores and reasoning:\n\n1. **Document Completeness**: 90%\nReasoning: The document contains comprehensive laboratory results for various important health markers. It includes patient name, test date, laboratory name, and detailed results with normal ranges. Clinical notes are also provided, highlighting abnormal values. However, it's missing some patient demographics (e.g., age, gender) and ordering physician information, which prevents a perfect score.\n\n2. **Data Accuracy**: 85%\nReasoning: Most values appear to be within expected ranges and are reported with precise decimal places, suggesting accurate measurement. However, the Hematocrit value of 99.5% is physiologically improbable and likely an error, which raises concerns about the overall data accuracy. The other values seem plausible, but this significant error reduces confidence in the data's overall accuracy.\n\n3. **Urgency Level**: 95%\nReasoning: The document indicates a CRITICAL value for Hemoglobin (5.96 g/dL), which is significantly below the normal range. The clinical notes explicitly state \"Immediate attention required.\" This, combined with the abnormal LDL Cholesterol and the questionable Hematocrit value, suggests a high level of urgency for medical intervention.\n\n4. **Action Required**: 85%\nReasoning: The clinical notes clearly recommend a consultation with a primary care physician, which is a specific action. The document also highlights abnormal values that require attention. However, it doesn't provide detailed next steps or a clear timeline for the recommended consultation, which would have made the required action more explicit.\n\nConcerns and missing information:\n\n1. The Hematocrit value of 99.5% is physiologically impossible and is likely an error. This needs immediate verification.\n2. The Hemoglobin value is critically low and requires urgent medical attention. The document doesn't specify if the patient has been notified or if emergency services have been contacted.\n3. Patient demographics such as age and gender are missing, which could be important for interpreting some of these results.\n4. The ordering physician's information is not provided, which could delay follow-up actions.\n5. There's no mention of the patient's medical history or current medications, which could be relevant for interpreting these results.\n6. The document doesn't specify when or how the follow-up with the primary care physician should occur, given the urgency of some results.",
+      "metrics": {
+        "input_tokens": 751,
+        "output_tokens": 538,
+        "total_tokens": 1289,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "1bab5510-4ed7-49ca-aa75-95fed22e47d6",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_001_full.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:00:57.572278",
+      "success": true,
+      "response_time": 5.43061089515686,
+      "response_text": "Here is the classification and key metadata extracted from the healthcare document:\n\nDocument type: Lab results\n\nDate of service: 2025-09-05\n\nProvider name: LabCorp Diagnostics\n\nPatient identifier: Lauren Key (name should be redacted in practice)\n\nKey services/tests mentioned:\n- Glucose\n- Cholesterol panel (Total, HDL, LDL)\n- Triglycerides\n- Complete Blood Count (Hemoglobin, Hematocrit, White Blood Cells, Platelets)\n- Creatinine\n- Liver enzymes (ALT, AST)\n- Thyroid function (TSH, Free T4)\n\nUrgency level: Routine (based on the normal results and lack of urgent language)\n\nAdditional notes:\n- All test results are within normal ranges\n- The document includes clinical notes stating to continue current treatment as prescribed",
+      "metrics": {
+        "input_tokens": 674,
+        "output_tokens": 201,
+        "total_tokens": 875,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.3,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "17de0776-5fad-431c-9f8d-0dd3ff2c95ce",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_001_full.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:01:07.534177",
+      "success": true,
+      "response_time": 9.958925247192383,
+      "response_text": "Here's a breakdown of the laboratory results for Lauren Key in simple terms:\n\n1. **Document Summary**: \nThis document shows the results of various blood tests performed on Lauren Key on September 5, 2025. All the test results are within normal ranges, which is good news.\n\n2. **Key Information**: \n- Blood sugar (Glucose) is normal\n- Cholesterol levels (Total, HDL, LDL) are all good\n- Triglycerides (fats in blood) are normal\n- Blood cell counts (Hemoglobin, Hematocrit, White Blood Cells, Platelets) are all normal\n- Kidney function (Creatinine) is normal\n- Liver function (ALT, AST) is normal\n- Thyroid function (TSH, Free T4) is normal\n\n3. **Financial Impact**: \nThis document doesn't mention any costs. However, these are routine tests often covered by insurance. You may want to check with your insurance provider about any potential out-of-pocket costs for these lab tests.\n\n4. **Next Steps**: \nThe clinical notes suggest continuing your current treatment as prescribed. This means you should:\n- Keep taking any medications as directed by your doctor\n- Maintain your current lifestyle habits (diet, exercise, etc.)\n- Attend your next scheduled check-up\n\n5. **Questions to Ask**: \nWhen you next see your healthcare provider, you might want to ask:\n- Are there any areas where my results could be improved, even though they're in the normal range?\n- How often should I have these tests repeated?\n- Are there any lifestyle changes I should consider to maintain these good results?\n- Do these results impact any of my current medications or treatments?\n\nRemember, while these results look good, always consult with your healthcare provider for personalized medical advice and interpretation of your test results. They can provide the most accurate guidance based on your full medical history and current health status.",
+      "metrics": {
+        "input_tokens": 685,
+        "output_tokens": 433,
+        "total_tokens": 1118,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "fd5b7597-2f25-4987-ac47-78ffe598832e",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_001_full.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:01:21.738183",
+      "success": true,
+      "response_time": 14.201234817504883,
+      "response_text": "Here's my analysis of the healthcare document with confidence scores and reasoning:\n\n1. **Document Completeness**: 90%\nReasoning: The document contains comprehensive laboratory results for various important health markers, including glucose, cholesterol, blood cell counts, liver enzymes, and thyroid function. It also includes patient information, test date, and laboratory name. However, it's missing some details like the patient's age, gender, and any medications they might be taking, which could provide more context for the results.\n\n2. **Data Accuracy**: 95%\nReasoning: The data appears to be highly accurate. All values are reported with two decimal places, suggesting precise measurements. The results are presented alongside normal ranges, allowing for easy interpretation. The use of checkmarks (✅) indicates that all values fall within the normal range, which is consistent with the provided numbers and the clinical notes. The laboratory (LabCorp Diagnostics) is a well-known and reputable facility, further supporting the likelihood of accurate results.\n\n3. **Urgency Level**: 10%\nReasoning: The urgency level for this document is very low. All test results are within normal limits, as indicated by the checkmarks and explicitly stated in the clinical notes. There are no abnormal findings that would require immediate attention or intervention. The note to \"Continue current treatment as prescribed\" suggests that no urgent changes are needed.\n\n4. **Action Required**: 70%\nReasoning: The action required is relatively clear, but somewhat limited. The clinical notes state to \"Continue current treatment as prescribed,\" which is a straightforward instruction. However, the document doesn't provide any specific recommendations for follow-up, lifestyle changes, or next steps. It's unclear if any particular action is needed in response to these normal results, such as scheduling a follow-up appointment or repeating the tests after a certain period.\n\nConcerns or missing information:\n1. The document lacks patient demographic information beyond the name, such as age and gender, which can be relevant for interpreting some test results.\n2. There's no mention of the patient's medical history or current medications, which could provide context for the results.\n3. The document doesn't specify when the next set of tests should be conducted or when the patient should next see their healthcare provider.\n4. While all results are normal, some values (like TSH at 3.94 mIU/L) are close to the upper limit of the normal range. The document doesn't address whether these borderline values warrant any special attention or monitoring.\n5. The test date is in the future (2025-09-05), which is likely an error and should be corrected to ensure accurate record-keeping.",
+      "metrics": {
+        "input_tokens": 673,
+        "output_tokens": 579,
+        "total_tokens": 1252,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "84ef4860-1da4-4fc6-b681-a160afe8a17d",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_002_comprehensive.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:01:26.243053",
+      "success": true,
+      "response_time": 4.502676248550415,
+      "response_text": "Here is the classification and key metadata extracted from the healthcare document:\n\nDocument type: Lab results\n\nDate of service: 2025-09-22\n\nProvider name: LabCorp Diagnostics\n\nPatient identifier: James Davis (name should be redacted in practice)\n\nKey services/tests mentioned:\n- Glucose\n- Total Cholesterol\n- HDL Cholesterol\n- LDL Cholesterol\n- Triglycerides\n- Hemoglobin\n- Hematocrit\n- White Blood Cells\n- Platelets\n- Creatinine\n\nUrgency level: Routine (based on the normal results and lack of urgent language)\n\nAdditional notes:\n- All laboratory values are reported to be within normal limits\n- The document includes clinical notes suggesting continuation of current treatment",
+      "metrics": {
+        "input_tokens": 570,
+        "output_tokens": 178,
+        "total_tokens": 748,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.3,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "f56d045f-7fd5-4a8e-892e-21d3cd4df19c",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_002_comprehensive.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:01:35.235813",
+      "success": true,
+      "response_time": 8.989919900894165,
+      "response_text": "Here's a breakdown of the laboratory results for James Davis in simple terms:\n\n1. **Document Summary**: \nThis document shows the results of various blood tests performed on James Davis on September 22, 2025. All the test results are within normal ranges, which is good news.\n\n2. **Key Information**: \n- Blood sugar (Glucose) is normal\n- Cholesterol levels (Total, HDL, and LDL) are all good\n- Triglycerides (a type of fat in the blood) are normal\n- Blood cell counts (Hemoglobin, Hematocrit, White Blood Cells, Platelets) are all within healthy ranges\n- Kidney function (Creatinine) is normal\n\n3. **Financial Impact**: \nThis document doesn't mention any costs. However, these are routine tests often covered by insurance. You may want to check with your insurance provider about any potential out-of-pocket expenses.\n\n4. **Next Steps**: \n- Keep up your current healthy habits as your results are good\n- Continue any medications or treatments as prescribed\n- Schedule your next routine check-up as recommended by your doctor\n\n5. **Questions to Ask Your Healthcare Provider**: \n- How often should I have these tests repeated?\n- Are there any lifestyle changes I should make to maintain these good results?\n- Do any of my results, even though normal, need closer monitoring?\n- How do these results compare to my previous tests?\n\nRemember, while these results look good, always consult with your healthcare provider for personalized medical advice and interpretation of your test results. They can provide the most accurate guidance based on your overall health and medical history.",
+      "metrics": {
+        "input_tokens": 581,
+        "output_tokens": 366,
+        "total_tokens": 947,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "5bc9258b-7eaa-4247-acf4-1e8cdec23985",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_002_comprehensive.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:01:47.320450",
+      "success": true,
+      "response_time": 12.081830263137817,
+      "response_text": "Thank you for providing this laboratory results document. I'll analyze it and provide confidence scores for the requested categories, along with reasoning for each score.\n\n1. **Document Completeness**: 90%\nReasoning: The document contains essential information such as patient name, test date, laboratory name, and a comprehensive set of common laboratory tests with results and normal ranges. It also includes clinical notes. However, it's missing some details like patient ID, age, gender, and ordering physician, which prevents it from receiving a perfect score.\n\n2. **Data Accuracy**: 95%\nReasoning: The data appears to be highly accurate. All values are presented with precise decimal points, indicating careful measurement. The results fall within normal ranges, which is consistent with the clinical notes. The test date is in the future (2025), which could be a typo, but doesn't necessarily indicate inaccuracy in the actual test results.\n\n3. **Urgency Level**: 10%\nReasoning: The urgency level is very low. All test results are within normal limits, and the clinical notes suggest continuing current treatment without any changes. There are no flagged abnormalities or concerning values that would require immediate attention.\n\n4. **Action Required**: 80%\nReasoning: The action required is clear but minimal. The clinical notes explicitly state to \"Continue current treatment as prescribed.\" This is a straightforward instruction, though it doesn't provide details about what the current treatment entails. A higher score would be given if specific follow-up instructions or next steps were provided.\n\nConcerns or missing information:\n1. The test date is in the future (2025), which is likely a typo and should be corrected for accuracy.\n2. Patient demographic information such as age, gender, and patient ID are missing, which could be important for interpreting results.\n3. The ordering physician's name and contact information are not provided.\n4. There's no mention of when the next follow-up or lab test should be scheduled.\n5. The document doesn't specify if this is a routine check-up or part of monitoring for a specific condition.\n\nOverall, this appears to be a routine lab report with normal results, requiring no urgent action. The document is largely complete and accurate, with clear but minimal action required.",
+      "metrics": {
+        "input_tokens": 569,
+        "output_tokens": 488,
+        "total_tokens": 1057,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.3,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "b69e48bd-c790-4e9c-afab-b0b9f1a06c4e",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_003_comprehensive.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:01:51.903080",
+      "success": true,
+      "response_time": 4.579485177993774,
+      "response_text": "Here is the classification and key metadata extracted from the healthcare document:\n\nDocument type: Lab results\n\nDate of service: 2025-09-10\n\nProvider name: LabCorp Diagnostics\n\nPatient identifier: Dominique Edwards (name should be redacted in practice)\n\nKey services/tests mentioned:\n- Glucose\n- Total Cholesterol\n- HDL Cholesterol\n- LDL Cholesterol\n- Triglycerides\n- Hemoglobin\n- Hematocrit\n- White Blood Cells\n- Platelets\n- Creatinine\n\nUrgency level: Urgent\n\nThe document is classified as lab results, containing various blood test results. The urgency level is set to urgent due to the critical value for Creatinine, which is noted to require immediate attention and consultation with a primary care physician.",
+      "metrics": {
+        "input_tokens": 626,
+        "output_tokens": 189,
+        "total_tokens": 815,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "a8453a8a-e5b5-4bcd-a05a-d81057b8cf40",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_003_comprehensive.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:02:01.102343",
+      "success": true,
+      "response_time": 9.197530746459961,
+      "response_text": "Here's a breakdown of the laboratory results for Dominique Edwards in simple terms:\n\n1. **Document Summary**: \nThis document shows the results of various blood tests performed on September 10, 2025. Most results are within normal ranges, but there are two notable findings that require attention.\n\n2. **Key Information**: \n- Most test results are normal, which is good news.\n- HDL Cholesterol (often called \"good\" cholesterol) is higher than usual. This is generally not a concern.\n- Creatinine level is lower than the normal range. This is marked as critical and needs immediate attention.\n\n3. **Financial Impact**:\nThis document doesn't mention costs. However, follow-up tests or appointments may be needed, which could have financial implications. It's advisable to check with your insurance provider about coverage for any additional tests or consultations.\n\n4. **Next Steps**:\n- Contact your primary care physician as soon as possible to discuss these results, especially the low creatinine level.\n- Schedule a follow-up appointment for further evaluation.\n- If you experience any unusual symptoms, seek medical attention promptly.\n\n5. **Questions to Ask Your Healthcare Provider**:\n- What could be causing the low creatinine level?\n- Are there any immediate risks associated with this result?\n- What additional tests, if any, do I need?\n- Should I make any changes to my diet or lifestyle?\n- How often should I have my creatinine levels checked in the future?\n\nRemember, while this information helps you understand your test results, it's crucial to consult with your healthcare provider for proper medical advice and interpretation of these results. They can provide personalized recommendations based on your overall health and medical history.",
+      "metrics": {
+        "input_tokens": 637,
+        "output_tokens": 379,
+        "total_tokens": 1016,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "f3f23dc8-da8b-44e0-877b-0f110b084b27",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_003_comprehensive.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:02:13.325717",
+      "success": true,
+      "response_time": 12.220582962036133,
+      "response_text": "Here's my analysis of the healthcare document with confidence scores and reasoning:\n\n1. **Document Completeness**: 90%\nReasoning: The document contains essential information including patient name, test date, laboratory name, and a comprehensive set of test results with normal ranges. It also includes clinical notes highlighting abnormal results. However, it's missing the patient's age, gender, and ordering physician, which would make it 100% complete.\n\n2. **Data Accuracy**: 95%\nReasoning: The values provided appear to be precise (given to two decimal places) and mostly fall within expected ranges. The laboratory (LabCorp Diagnostics) is a reputable source. However, there's an unusually high HDL cholesterol level, which, while possible, is somewhat rare. This slight anomaly prevents a 100% confidence score.\n\n3. **Urgency Level**: 80%\nReasoning: The document indicates a CRITICAL value for Creatinine, which is significantly below the normal range. The clinical notes recommend immediate attention and consultation with a primary care physician. However, other values are within normal ranges, which is why it's not rated at 100% urgency.\n\n4. **Action Required**: 85%\nReasoning: The clinical notes clearly state that immediate attention is required and recommend consultation with a primary care physician. However, it doesn't specify a timeframe for this consultation or provide any interim instructions, which would have made the required action clearer.\n\nConcerns and missing information:\n\n1. The critically low Creatinine level (0.39 mg/dL) is a significant concern. This could indicate kidney dysfunction or severe muscle wasting.\n\n2. The unusually high HDL Cholesterol (97.88 mg/dL) is noted as abnormal, even though high HDL is generally considered good. This might warrant further investigation.\n\n3. The document lacks patient demographic information such as age and gender, which can be important for interpreting some of these results.\n\n4. There's no information about the patient's medical history or current medications, which could provide context for these results.\n\n5. The ordering physician's name and contact information are missing, which could be important for follow-up.\n\n6. There's no specified timeframe for the recommended consultation with a primary care physician, despite the presence of a critical value.",
+      "metrics": {
+        "input_tokens": 625,
+        "output_tokens": 507,
+        "total_tokens": 1132,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "86fd7561-e2ea-47cc-aaa3-bdf5122e4d0a",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_004_basic.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:02:17.480011",
+      "success": true,
+      "response_time": 4.151468992233276,
+      "response_text": "Here's the classification and key metadata extracted from the healthcare document:\n\nDocument type: Lab results\n\nDate of service: 2025-09-15\n\nProvider name: LabCorp Diagnostics\n\nPatient identifier: Danny Jackson (name should be redacted in practice)\n\nKey services/tests mentioned:\n- Glucose test\n- Hemoglobin test\n- Hematocrit test\n- White Blood Cell count\n- Platelet count\n\nUrgency level: Urgent\n\nThe document is classified as \"Lab results\" based on its title and content. It contains blood test results for various parameters. The urgency level is set to \"Urgent\" due to the critical value for White Blood Cells and the recommendation for immediate attention in the clinical notes.",
+      "metrics": {
+        "input_tokens": 493,
+        "output_tokens": 166,
+        "total_tokens": 659,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "d11d6566-4367-432a-bb37-1e9dfe4b56cf",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_004_basic.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:02:26.017336",
+      "success": true,
+      "response_time": 8.533910989761353,
+      "response_text": "Here's a breakdown of the laboratory results for Danny Jackson in simple terms:\n\n1. **Document Summary**: \nThis document shows the results of a blood test. It includes measurements of glucose (blood sugar), hemoglobin, hematocrit, white blood cells, and platelets. Some results are within normal range, but there are two concerning findings that require attention.\n\n2. **Key Information**: \n- Glucose (blood sugar) is high at 207.51 mg/dL. Normal range is 70-100 mg/dL.\n- White blood cell count is low at 4.16 K/uL. Normal range is 4.5-11.0 K/uL.\n- Other tests (hemoglobin, hematocrit, platelets) are within normal ranges.\n\n3. **Financial Impact**: \nThis document doesn't mention costs directly. However, these results may lead to follow-up appointments or additional tests, which could have financial implications. Check with your insurance provider about coverage for any recommended follow-up care.\n\n4. **Next Steps**: \n- Contact your primary care physician as soon as possible to discuss these results.\n- Your doctor may want to schedule a follow-up appointment or order additional tests.\n- Do not make any changes to your diet or medication without consulting your doctor first.\n\n5. **Questions to Ask**: \n- What could be causing my high glucose levels?\n- Is my low white blood cell count a cause for concern?\n- Do I need any additional tests?\n- Should I make any changes to my diet or lifestyle?\n- Do I need to see a specialist?\n\nRemember, while this information can help you understand your test results, it's crucial to consult with your healthcare provider for proper medical advice and interpretation of these results. They can provide personalized recommendations based on your overall health and medical history.",
+      "metrics": {
+        "input_tokens": 504,
+        "output_tokens": 410,
+        "total_tokens": 914,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "ebc57367-5141-4696-895c-e013b5efe3de",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "lab_results",
+      "document_file": "test-data/lab-results/lab_004_basic.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:02:38.717716",
+      "success": true,
+      "response_time": 12.698282957077026,
+      "response_text": "Based on the provided laboratory results document, here's an analysis with confidence scores for the requested categories:\n\n1. **Document Completeness**: 85%\nReasoning: The document contains essential information such as patient name, test date, laboratory name, and specific test results with reference ranges. However, it lacks some details like patient age, gender, and ordering physician, which could provide more context.\n\n2. **Data Accuracy**: 95%\nReasoning: The results appear to be from a reputable laboratory (LabCorp Diagnostics) and include precise measurements with two decimal places. The reference ranges are provided, which adds to the credibility. The high level of detail suggests accurate reporting.\n\n3. **Urgency Level**: 90%\nReasoning: The document explicitly states \"CRITICAL value for White Blood Cells\" and \"Immediate attention required.\" Additionally, the significantly elevated glucose level (207.51 mg/dL vs. normal 70-100 mg/dL) indicates a potentially urgent situation.\n\n4. **Action Required**: 80%\nReasoning: The document clearly recommends \"consultation with primary care physician.\" However, it doesn't provide specific instructions on how urgently this should happen (e.g., within 24 hours, immediately) or any interim steps the patient should take.\n\nConcerns and missing information:\n\n1. The critically low white blood cell count (4.16 K/uL) could indicate a serious condition such as an infection, bone marrow disorder, or immune system issue. This requires immediate medical attention.\n\n2. The elevated glucose level (207.51 mg/dL) is significantly above the normal range and could indicate diabetes or other metabolic disorders. This also requires prompt medical evaluation.\n\n3. The document lacks information on the patient's medical history, current medications, or symptoms, which would be valuable for interpreting these results.\n\n4. There's no mention of any follow-up tests that might be needed, such as a glycated hemoglobin (A1C) test for the elevated glucose or further investigation into the low white blood cell count.\n\n5. The document doesn't specify whether these results have been communicated to the patient's primary care physician or if any immediate interventions are necessary before the consultation.\n\nIn conclusion, while the document provides critical information and indicates the need for immediate attention, it could be improved by including more patient context, specific follow-up instructions, and a clearer action plan for addressing the abnormal results.",
+      "metrics": {
+        "input_tokens": 492,
+        "output_tokens": 537,
+        "total_tokens": 1029,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.0,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "d8fe8e79-09df-4f49-a568-feb92bd68bdf",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/edge-cases/eob_multiple_denials.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:02:44.254268",
+      "success": true,
+      "response_time": 5.532918691635132,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: EOB (Explanation of Benefits)\n\nDate of service: 2025-09-22 (This appears to be the primary date of service, though there are two different service dates listed in the claim details)\n\nProvider name: Regional Medical Group\n\nPatient identifier (redacted): fdR2641096 (Member ID)\n\nKey services/tests mentioned:\n1. Office visit (Code: 99213)\n2. Detailed office visit (Code: 99214)\n\nUrgency level: Routine (Based on the nature of the services, which are office visits, this appears to be routine care rather than urgent or emergency)\n\nAdditional notes:\n- The document is an Explanation of Benefits from Medicare\n- The patient's name is Caitlyn Kelley\n- The claim number is CLM3952410\n- Both services were denied coverage, resulting in full patient responsibility for the billed amounts\n- Total billed amount: $329.10\n- Insurance paid: $0.00\n- Patient responsibility: $329.10",
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 246,
+        "total_tokens": 703,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "24b824ed-4ce8-4a1a-be3b-de883ccf8514",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/edge-cases/eob_multiple_denials.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:02:54.171616",
+      "success": true,
+      "response_time": 9.914963960647583,
+      "response_text": "Here's a breakdown of the Explanation of Benefits (EOB) document in simple terms:\n\n1. **Document Summary**: \nThis document is an Explanation of Benefits (EOB) from Medicare for Caitlyn Kelley. It shows two office visits that were billed to Medicare but were not covered, leaving Caitlyn responsible for the full amount.\n\n2. **Key Information**:\n- Two office visits occurred: one on September 7, 2025, and another on September 19, 2025.\n- Both visits were with Regional Medical Group.\n- Medicare has denied coverage for both visits.\n- The total amount billed for both visits is $329.10.\n\n3. **Financial Impact**:\n- Caitlyn is responsible for paying the full amount of $329.10.\n- Medicare did not pay anything towards these visits.\n- The first visit on September 7 costs $161.72.\n- The second visit on September 19 costs $167.38.\n\n4. **Next Steps**:\n- Contact Medicare to understand why the claims were denied.\n- Reach out to Regional Medical Group to discuss payment options or potential adjustments.\n- If you believe there's an error, gather all relevant medical records and receipts.\n- Consider filing an appeal with Medicare if you think these services should have been covered.\n\n5. **Questions to Ask**:\n- Why were these office visits denied by Medicare?\n- Are there any coding errors that could have led to the denial?\n- Is there any additional information I can provide to help get these claims covered?\n- What are my options for appealing this decision?\n- Can Regional Medical Group offer any discounts or payment plans?\n\nRemember, always consult with your healthcare provider or a Medicare representative for personalized medical and insurance advice. This explanation is based on the information provided in the EOB and is meant to help you understand the document, not to provide medical or legal advice.",
+      "metrics": {
+        "input_tokens": 468,
+        "output_tokens": 428,
+        "total_tokens": 896,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "68dbadf8-6d04-4be6-a6bc-a8c6549c812e",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/edge-cases/eob_multiple_denials.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:03:06.790954",
+      "success": true,
+      "response_time": 12.615658044815063,
+      "response_text": "Based on the provided Explanation of Benefits (EOB) document, here's an analysis with confidence scores for the requested categories:\n\n1. **Document Completeness**: 85% confidence\nReasoning: The document contains essential information such as patient details, insurance information, claim number, service dates, codes, billed amounts, and coverage status. However, it's missing some potentially important elements:\n- No explanation for why the claims were denied\n- No information about appeal rights or next steps\n- No contact information for the insurance company or provider\n\n2. **Data Accuracy**: 90% confidence\nReasoning: The data appears to be structured and consistent, with specific dates, amounts, and codes provided. The calculations add up correctly (total billed amount matches the sum of individual services). However, without cross-referencing with other documents, it's impossible to be 100% certain of accuracy.\n\n3. **Urgency Level**: 80% confidence\nReasoning: This document has a relatively high urgency level due to:\n- Both claims being denied, leaving the patient with full financial responsibility\n- The total amount owed ($329.10) is significant\n- The dates of service are recent (assuming the current date is close to 2025-09-22)\nHowever, there's no explicit deadline mentioned for action, which prevents this from being rated as extremely urgent.\n\n4. **Action Required**: 70% confidence\nReasoning: While it's clear that action is needed due to the denied claims, the document doesn't explicitly state what actions the patient should take. The patient likely needs to:\n- Contact the insurance company to understand why the claims were denied\n- Possibly appeal the decision\n- Arrange payment or discuss options with the provider\nThe lack of clear instructions or next steps reduces the confidence in this category.\n\nConcerns and missing information:\n1. No explanation for why the claims were denied\n2. Lack of information about appeal rights or process\n3. No contact information for the insurance company or provider\n4. No deadline for action or appeal\n5. No breakdown of any deductibles, co-pays, or co-insurance that might apply\n6. No information about whether the provider is in-network or out-of-network\n\nThese missing elements make it more challenging for the patient to understand their situation fully and take appropriate action, which is particularly concerning given the denied claims and significant financial responsibility.",
+      "metrics": {
+        "input_tokens": 456,
+        "output_tokens": 515,
+        "total_tokens": 971,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "2309b072-0774-404c-ae90-4350aea9de7b",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_001.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:03:13.221061",
+      "success": true,
+      "response_time": 6.426465034484863,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: EOB (Explanation of Benefits)\n\nDate of service: 2025-09-25 (This appears to be the overall date of service, though individual services have different dates)\n\nProvider name: Regional Medical Group\n\nPatient identifier: UeO3454781 (Member ID, redacted for privacy)\n\nKey services/tests mentioned:\n1. Basic metabolic panel (Code: 80053)\n2. Electrocardiogram (Code: 93000)\n\nUrgency level: Routine (Based on the nature of the services provided, this appears to be a routine visit rather than urgent or emergency care)\n\nAdditional relevant information:\n- Insurance: Aetna\n- Claim Number: CLM2663155\n- Total Billed Amount: $123.39\n- Insurance Payment: $93.20\n- Patient Responsibility: $30.19\n\nThis document provides a detailed breakdown of medical services received, associated costs, and how much the insurance covered versus the patient's responsibility. It's a typical EOB that patients receive after their insurance processes a claim for medical services.",
+      "metrics": {
+        "input_tokens": 463,
+        "output_tokens": 257,
+        "total_tokens": 720,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "62d6fed8-8b80-44a1-85bd-1556253df454",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_001.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:03:24.776663",
+      "success": true,
+      "response_time": 11.552029132843018,
+      "response_text": "Here's a breakdown of the Explanation of Benefits (EOB) document in simple terms:\n\n1. **Document Summary**: \n   This document is an Explanation of Benefits (EOB) from Aetna insurance for Brett Moses. It details two medical services received in September 2025: a basic metabolic panel and an electrocardiogram. The EOB shows what was billed, what the insurance paid, and what the patient owes.\n\n2. **Key Information**: \n   - Two medical services were provided: a basic metabolic panel and an electrocardiogram.\n   - Both services were covered by the insurance.\n   - The total bill for both services was $123.39.\n   - Aetna paid $93.20 of the total bill.\n   - Brett is responsible for paying $30.19.\n\n3. **Financial Impact**: \n   - Brett's out-of-pocket cost for these services is $30.19.\n   - This amount is the sum of $19.44 for the metabolic panel and $10.75 for the electrocardiogram.\n   - It's important to note that this is the patient's responsibility after insurance has paid their portion.\n\n4. **Next Steps**: \n   - Review the EOB carefully to ensure all information is correct.\n   - Keep this document for your records.\n   - Expect a bill from the healthcare provider (Regional Medical Group) for the $30.19 patient responsibility amount.\n   - Pay the bill when received, or contact the provider if you have questions or need to arrange a payment plan.\n\n5. **Questions to Ask**: \n   - \"Can you explain what a basic metabolic panel and electrocardiogram are used for?\"\n   - \"Are these tests part of a larger treatment plan or routine check-up?\"\n   - \"Will I need any follow-up tests or appointments based on these results?\"\n   - \"Are there any ways to reduce my out-of-pocket costs for future tests?\"\n   - \"How do these charges compare to my deductible and out-of-pocket maximum for the year?\"\n\nRemember, while this EOB provides important financial information, always consult with your healthcare provider for specific medical advice and to discuss the results of these tests.",
+      "metrics": {
+        "input_tokens": 474,
+        "output_tokens": 499,
+        "total_tokens": 973,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "d36ed481-b434-4b33-87ae-de13667409f8",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_001.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:03:36.274020",
+      "success": true,
+      "response_time": 11.494071960449219,
+      "response_text": "Based on the provided healthcare document, here's an analysis with confidence scores and reasoning:\n\n1. **Document Completeness**: 85%\nReasoning: The document contains essential information such as patient details, insurance information, claim number, service details, and financial summary. However, it's missing some potentially relevant information like the provider's contact details, explanation of any denied claims (if any), and instructions for the patient if they have questions.\n\n2. **Data Accuracy**: 90%\nReasoning: The data appears to be structured and consistent. The financial calculations add up correctly, and the information provided seems standard for an Explanation of Benefits. The high level of detail (including specific codes and dates) suggests accuracy. However, without cross-referencing with other documents, it's impossible to be 100% certain.\n\n3. **Urgency Level**: 20%\nReasoning: This document is an Explanation of Benefits, which typically doesn't require immediate action. It's informational in nature, explaining what services were provided and how they were billed. Unless there are unexpected charges or denied claims (which don't appear to be present here), this document has low urgency.\n\n4. **Action Required**: 70%\nReasoning: While the document doesn't explicitly state any required actions, it does imply that the patient has a financial responsibility. The patient needs to pay $30.19, which is clearly stated in the financial summary. However, the document doesn't provide clear instructions on how or when to make this payment, which reduces the clarity of the required action.\n\nConcerns or missing information:\n1. The document lacks instructions for the patient on how to proceed with their financial responsibility.\n2. There's no information about the deadline for the patient's payment.\n3. Contact information for the insurance company or healthcare provider is missing, which could be crucial if the patient has questions.\n4. The document doesn't explain what the patient should do if they disagree with any part of the EOB.\n5. There's no mention of any appeal process or patient rights regarding the claim.\n\nOverall, while the document provides a good overview of the services rendered and associated costs, it could be improved by including more actionable information for the patient.",
+      "metrics": {
+        "input_tokens": 462,
+        "output_tokens": 476,
+        "total_tokens": 938,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "ee8af921-c41d-4117-9c1d-0285c06485a5",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_002.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:03:42.765373",
+      "success": true,
+      "response_time": 6.4895408153533936,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: EOB (Explanation of Benefits)\n\nDate of service: 2025-09-21 (This appears to be the primary date of service, though individual services have different dates)\n\nProvider name: Family Practice Associates\n\nPatient identifier: DhZ6815607 (Member ID, redacted for privacy)\n\nKey services/tests mentioned:\n1. Basic metabolic panel\n2. Venipuncture\n3. Complete blood count\n\nUrgency level: Routine (There are no indications of urgency or emergency in the document)\n\nAdditional notes:\n- The document is from Aetna insurance\n- The claim number is CLM9290291\n- The total billed amount is $147.24\n- The insurance paid $118.95\n- The patient's responsibility is $28.29\n\nThis EOB provides a detailed breakdown of medical services provided, their costs, and how much the insurance covered versus the patient's responsibility. It appears to be for routine lab work, including blood tests and sample collection.",
+      "metrics": {
+        "input_tokens": 520,
+        "output_tokens": 241,
+        "total_tokens": 761,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 0.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "d8c80df7-7bfb-4fd6-8e5a-9016dd99a580",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_002.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:03:52.656728",
+      "success": true,
+      "response_time": 9.877564191818237,
+      "response_text": "Here's a breakdown of the Explanation of Benefits (EOB) document in simple terms:\n\n1. **Document Summary**: \nThis document is an Explanation of Benefits (EOB) from Aetna insurance for Katherine Melton. It details medical services received from Family Practice Associates on September 21, 2025, including blood tests and related procedures.\n\n2. **Key Information**: \n- Three services were provided: a basic metabolic panel, venipuncture (blood draw), and a complete blood count.\n- All services were covered by the insurance.\n- The total billed amount for all services was $147.24.\n- Aetna paid $118.95 of this bill.\n- Katherine is responsible for paying $28.29.\n\n3. **Financial Impact**: \n- Katherine needs to pay $28.29 for these services.\n- This amount is the sum of her responsibilities for each service:\n  * Basic metabolic panel: $14.16\n  * Venipuncture: $3.74\n  * Complete blood count: $10.39\n\n4. **Next Steps**: \n- Review the EOB carefully to ensure all information is correct.\n- Keep this document for your records.\n- Expect a bill from Family Practice Associates for the $28.29 patient responsibility.\n- Pay the bill when received, or contact the provider if you have questions or need to arrange a payment plan.\n\n5. **Questions to Ask**: \n- \"Can you explain what each of these tests was for?\"\n- \"Are there any follow-up tests or appointments I need to schedule?\"\n- \"How do these results compare to my previous tests?\"\n- \"Are there any lifestyle changes I should consider based on these results?\"\n- \"When should I have these tests done again?\"\n\nRemember, while this EOB provides important information about your healthcare costs and coverage, always consult with your healthcare provider for specific medical advice and interpretation of test results.",
+      "metrics": {
+        "input_tokens": 531,
+        "output_tokens": 432,
+        "total_tokens": 963,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "e75fcd59-1ceb-4cbd-ad7a-a96f0e42065f",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_002.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:04:06.274945",
+      "success": true,
+      "response_time": 13.614733934402466,
+      "response_text": "Here's an analysis of the healthcare document with confidence scores and reasoning:\n\n1. **Document Completeness**: 90% confidence\nReasoning: The document contains most of the essential information for an Explanation of Benefits (EOB), including patient details, insurance information, claim number, service descriptions, codes, dates, billed amounts, insurance payments, and patient responsibilities. However, it's missing a few elements that could make it more complete:\n- No contact information for the insurance company or provider\n- No explanation of how to dispute a claim if needed\n- No breakdown of how the patient responsibility was calculated (e.g., copay, deductible, coinsurance)\n\n2. **Data Accuracy**: 85% confidence\nReasoning: The data appears to be structured and consistent, which suggests a high level of accuracy. However, there are a few concerns:\n- The date of service (2025-09-21) doesn't match any of the individual service dates listed\n- The years mentioned (2025) are in the future, which could be a typo or data entry error\n- The financial summary adds up correctly, which is a good sign for accuracy\n\n3. **Urgency Level**: 20% confidence\nReasoning: This document appears to be a routine EOB and doesn't indicate any urgent action required:\n- All services are listed as \"covered\"\n- There are no denied claims or services requiring immediate attention\n- The document is explanatory in nature, typically sent after services have been rendered and processed\n\n4. **Action Required**: 70% confidence\nReasoning: The document implies some action is required, but it's not explicitly stated:\n- The patient has a financial responsibility of $28.29, which they likely need to pay\n- However, there's no clear statement about how or when to pay this amount\n- No explicit instructions are provided for what the patient should do next\n- It's unclear if this is a final bill or if a separate invoice will be sent\n\nConcerns and missing information:\n1. The discrepancy between the overall date of service and individual service dates needs clarification.\n2. The future dates (2025) should be verified for accuracy.\n3. Clear payment instructions for the patient's responsibility are missing.\n4. Contact information for both the insurance company and provider should be included.\n5. An explanation of how to dispute a claim or ask questions about the EOB would be helpful.\n6. A breakdown of how the patient responsibility was calculated (e.g., copay, deductible, coinsurance) would provide more clarity.\n\nOverall, while the document provides essential information, there are areas where it could be improved to increase clarity and actionable guidance for the patient.",
+      "metrics": {
+        "input_tokens": 519,
+        "output_tokens": 584,
+        "total_tokens": 1103,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "a27130bd-0f9e-48f3-b805-b708a8fadb43",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_003.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:04:12.349842",
+      "success": true,
+      "response_time": 6.072655200958252,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: EOB (Explanation of Benefits)\n\nDate of service: 2025-09-21 (This appears to be the primary date of service, though multiple dates are listed for individual services)\n\nProvider name: Family Practice Associates\n\nPatient identifier (redacted): AKs******** (Member ID partially redacted)\n\nKey services/tests mentioned:\n1. Office visit\n2. Basic metabolic panel\n3. Detailed office visit\n4. Complete blood count\n\nUrgency level: Routine (Based on the nature of services provided, this appears to be routine care rather than urgent or emergency care)\n\nAdditional relevant information:\n- Insurance: Kaiser Permanente\n- Claim Number: CLM1327449\n- Total Billed: $502.19\n- Insurance Payment: $406.97\n- Patient Responsibility: $95.22\n\nThis EOB document provides a detailed breakdown of medical services provided, their costs, insurance coverage, and the patient's financial responsibility for a series of visits and tests conducted in September 2025.",
+      "metrics": {
+        "input_tokens": 573,
+        "output_tokens": 245,
+        "total_tokens": 818,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "e06b3734-4606-4a68-a760-fd86239ca7b3",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_003.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:04:23.815552",
+      "success": true,
+      "response_time": 11.463705062866211,
+      "response_text": "Here's a breakdown of the Explanation of Benefits (EOB) document in simple terms:\n\n1. **Document Summary**: \nThis document is an Explanation of Benefits (EOB) from Kaiser Permanente for Monica Jacobson. It details medical services received, what the insurance company paid, and what the patient owes for services provided by Family Practice Associates in September 2025.\n\n2. **Key Information**: \n- The document covers four separate medical services: two office visits, a basic metabolic panel, and a complete blood count.\n- All services were covered by the insurance.\n- The total bill for all services was $502.19.\n- The insurance company (Kaiser Permanente) paid $406.97.\n- Monica is responsible for paying $95.22.\n\n3. **Financial Impact**: \n- Monica's total out-of-pocket cost is $95.22.\n- This amount is the sum of her responsibilities for each service:\n  - $19.26 for the first office visit\n  - $21.07 for the basic metabolic panel\n  - $45.95 for the detailed office visit\n  - $8.94 for the complete blood count\n- Monica should expect a bill from Family Practice Associates for this amount.\n\n4. **Next Steps**: \n- Review the EOB carefully to ensure all information is correct.\n- Keep this document for your records.\n- Expect a bill from Family Practice Associates for $95.22.\n- Pay the bill when received, or contact the provider's billing department if you have questions or need to arrange a payment plan.\n\n5. **Questions to Ask**: \n- \"Can you explain why the detailed office visit (99214) has a higher patient responsibility than the other services?\"\n- \"Are there any preventive services I'm eligible for that might be fully covered by my insurance?\"\n- \"How can I estimate my out-of-pocket costs for future visits or procedures?\"\n- \"Are there any discounts available if I pay my bill in full immediately?\"\n- \"Can you explain how my deductible, co-pay, or co-insurance affected these charges?\"\n\nRemember, while this EOB provides important information about your healthcare costs, always consult with your healthcare provider for specific medical advice and with your insurance company for detailed questions about your coverage.",
+      "metrics": {
+        "input_tokens": 584,
+        "output_tokens": 509,
+        "total_tokens": 1093,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "b05d4d10-31fc-424e-bb47-dea0581d68e9",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_003.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:04:36.426046",
+      "success": true,
+      "response_time": 12.60893702507019,
+      "response_text": "I'll analyze this healthcare document and provide confidence scores for the requested categories, along with reasoning for each score.\n\n1. **Document Completeness**: 90% confidence\nReasoning: The document contains most of the essential information expected in an Explanation of Benefits (EOB). It includes patient details, insurance information, claim number, service dates, providers, and a breakdown of services with corresponding codes, billed amounts, insurance payments, and patient responsibilities. The financial summary provides a clear overview. However, it's missing a few minor details that could make it more complete, such as the insurance plan type or contact information for inquiries.\n\n2. **Data Accuracy**: 85% confidence\nReasoning: The data appears to be structured and consistent throughout the document. The calculations in the financial summary match the individual service breakdowns, which suggests attention to detail. However, there's a discrepancy in the dates: the \"Date of Service\" at the top is listed as 2025-09-21, but the individual service dates range from 2025-09-03 to 2025-09-22. This inconsistency slightly reduces confidence in the overall data accuracy.\n\n3. **Urgency Level**: 20% confidence\nReasoning: EOBs are typically informational documents and not usually urgent. There are no indications of immediate action required, such as approaching deadlines or pending payments. The document appears to be a routine summary of services rendered and associated costs. However, the patient may need to budget for their responsibility of $95.22.\n\n4. **Action Required**: 70% confidence\nReasoning: While the document doesn't explicitly state required actions, the presence of a \"Patient Responsibility\" amount implies that the patient needs to pay $95.22. This action is clear from the financial summary. However, the document could be improved by including direct instructions on how and when to make this payment, which would increase the clarity of required action.\n\nConcerns and missing information:\n1. The discrepancy in the \"Date of Service\" needs to be addressed for accuracy.\n2. The document lacks contact information for the insurance company or provider for potential inquiries.\n3. There are no instructions on how or when the patient should pay their responsibility.\n4. The document doesn't specify if this is the final EOB or if additional charges may be forthcoming.\n5. There's no mention of an appeals process if the patient disagrees with the charges.\n\nThese points, if addressed, would enhance the document's completeness, accuracy, and clarity of required actions.",
+      "metrics": {
+        "input_tokens": 572,
+        "output_tokens": 548,
+        "total_tokens": 1120,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    },
+    {
+      "test_id": "909ff537-3cc9-4e5a-b15c-b7d6b8da4597",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_004.json",
+      "prompt_type": "document_classification",
+      "test_timestamp": "2025-09-30T18:04:42.261858",
+      "success": true,
+      "response_time": 5.8338189125061035,
+      "response_text": "Based on the provided document, here is the classification and key metadata extraction:\n\nDocument type: EOB (Explanation of Benefits)\n\nDate of service: 2025-09-04 (Note: There are also additional service dates mentioned: 2025-09-13 and 2025-09-27)\n\nProvider name: City General Hospital\n\nPatient identifier (redacted): Howard Harvey (Member ID: Mxs8485175)\n\nKey services/tests mentioned:\n1. Venipuncture (Code: 36415)\n2. Electrocardiogram (Code: 93000)\n\nUrgency level: Routine (Based on the nature of the services provided, this appears to be a routine visit rather than urgent or emergency care)\n\nAdditional information:\n- Insurance: Cigna\n- Claim Number: CLM1385751\n- Total Billed Amount: $68.13\n- Insurance Payment: $58.20\n- Patient Responsibility: $9.93\n\nThis document is clearly an Explanation of Benefits (EOB) from an insurance company (Cigna) detailing the services provided, amounts billed, insurance payments, and patient responsibilities for a specific claim.",
+      "metrics": {
+        "input_tokens": 464,
+        "output_tokens": 265,
+        "total_tokens": 729,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 1.0,
+          "safety_score": 0.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Classify this healthcare document and extract key metadata:\n\nDocument types to identify:\n- Medical bill/invoice\n- EOB (Explanation of Benefits)\n- Lab results\n- Imaging reports\n- Insurance correspondence\n- Provider statements\n\nExtract:\n- Document type\n- Date of service\n- Provider name\n- Patient identifier (redacted)\n- Key services/tests mentioned\n- Urgency level (routine/urgent/emergency)"
+    },
+    {
+      "test_id": "0cfcd60f-83c3-4f2b-bd36-e39656dcfc80",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_004.json",
+      "prompt_type": "patient_education",
+      "test_timestamp": "2025-09-30T18:04:53.706827",
+      "success": true,
+      "response_time": 11.442421913146973,
+      "response_text": "Here's a breakdown of the Explanation of Benefits (EOB) document in simple terms:\n\n1. **Document Summary**: \nThis document is an Explanation of Benefits (EOB) from Cigna insurance for Howard Harvey. It details two medical services received at City General Hospital in September 2025: a blood draw (venipuncture) and an electrocardiogram (ECG or EKG).\n\n2. **Key Information**:\n   - The services were provided on September 13 and 27, 2025.\n   - Both services were covered by the insurance.\n   - The total bill for both services was $68.13.\n   - Cigna paid $58.20 of the total bill.\n   - Howard is responsible for paying $9.93.\n\n3. **Financial Impact**:\n   - Howard needs to pay $9.93 out of pocket for these services.\n   - For the blood draw, Howard owes $4.51.\n   - For the ECG, Howard owes $5.42.\n   - The insurance covered most of the cost (about 85%), leaving Howard with about 15% of the total bill.\n\n4. **Next Steps**:\n   - Review the EOB carefully to ensure all information is correct.\n   - Keep this document for your records.\n   - Expect a bill from City General Hospital for the $9.93 patient responsibility amount.\n   - Pay the bill when received, or contact the hospital's billing department if you have questions or need to arrange a payment plan.\n\n5. **Questions to Ask** your healthcare provider or insurance company:\n   - Why were these tests necessary? What do the results mean for my health?\n   - Are there any follow-up tests or appointments I should schedule?\n   - Is this the final bill, or should I expect any additional charges?\n   - If I have trouble paying the $9.93, what are my options?\n   - How do these charges apply to my deductible or out-of-pocket maximum for the year?\n\nRemember, always consult with your healthcare provider for specific medical advice and with your insurance company for detailed coverage information. This EOB is a financial document and doesn't provide medical recommendations.",
+      "metrics": {
+        "input_tokens": 475,
+        "output_tokens": 491,
+        "total_tokens": 966,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 1.0,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "You are a medical educator helping patients understand their healthcare documents. Provide:\n\n1. **Document Summary**: What this document tells us\n2. **Key Information**: Important details explained in simple terms\n3. **Financial Impact**: What the patient needs to know about costs\n4. **Next Steps**: What the patient should do next\n5. **Questions to Ask**: What to discuss with healthcare provider\n\nUse clear, non-technical language. Always remind patients to consult their healthcare provider for medical advice."
+    },
+    {
+      "test_id": "9b2950ec-1f73-44bf-821e-ee6d0fa23cd4",
+      "session_id": "6e44d4e6-c09a-4e0d-943c-f3bc7580fe81",
+      "document_type": "eob",
+      "document_file": "test-data/eob/eob_004.json",
+      "prompt_type": "confidence_scoring",
+      "test_timestamp": "2025-09-30T18:05:07.323426",
+      "success": true,
+      "response_time": 13.614968061447144,
+      "response_text": "Based on the provided Explanation of Benefits (EOB) document, here's an analysis with confidence scores for the requested categories:\n\n1. **Document Completeness**: 85% confidence\nReasoning: The document contains essential information such as patient details, insurance information, claim number, service details, and financial summary. However, it's missing some potentially relevant information like the diagnosis codes, place of service, and any notes or explanations for the services rendered.\n\n2. **Data Accuracy**: 90% confidence\nReasoning: The data appears to be structured and consistent, with precise dollar amounts and specific dates. The calculations seem accurate (e.g., the total billed amount matches the sum of individual services). The use of standardized medical codes (36415, 93000) also suggests accuracy. However, without cross-referencing with other documents, it's impossible to be 100% certain.\n\n3. **Urgency Level**: 20% confidence\nReasoning: This appears to be a routine EOB for outpatient services (venipuncture and electrocardiogram). There's no indication of emergency services or urgent care. The dates of service are spread out (2025-09-04 and 2025-09-13, 2025-09-27), suggesting these were planned procedures rather than urgent care.\n\n4. **Action Required**: 70% confidence\nReasoning: The document clearly shows a patient responsibility amount of $9.93, which implies that action is required from the patient to pay this amount. However, the EOB doesn't explicitly state when this amount is due or how to pay it, which reduces the clarity of the required action.\n\nConcerns and missing information:\n1. The document lacks information on the payment due date for the patient's responsibility.\n2. There's no clear instruction on how the patient should make the payment.\n3. The reason for the services (diagnosis) is not provided, which could be important for the patient's records.\n4. The document doesn't specify if this is the final EOB or if more charges might be forthcoming.\n5. There's a discrepancy between the initial date of service (2025-09-04) and the dates listed for each service (2025-09-13 and 2025-09-27), which could be confusing for the patient.\n6. The document doesn't provide any information about appeal rights or the process to follow if the patient disagrees with the charges.\n\nOverall, while the document provides key financial information, it could be improved by addressing these concerns and including the missing information to make it more comprehensive and actionable for the patient.",
+      "metrics": {
+        "input_tokens": 463,
+        "output_tokens": 568,
+        "total_tokens": 1031,
+        "quality_metrics": {
+          "length_score": 1.0,
+          "structure_score": 0.0,
+          "safety_score": 0.3,
+          "accuracy_score": 0.5,
+          "helpfulness_score": 1.0
+        }
+      },
+      "prompt_text": "Analyze this healthcare document and provide confidence scores (0-100%) for:\n\n1. **Document Completeness**: How complete is the information?\n2. **Data Accuracy**: How likely are the values to be correct?\n3. **Urgency Level**: How urgent is this document?\n4. **Action Required**: How clear is the required action?\n\nProvide reasoning for each score and highlight any concerns or missing information."
+    }
+  ]
+}
