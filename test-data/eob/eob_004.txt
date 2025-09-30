@@ -1,0 +1,30 @@
+
+EXPLANATION OF BENEFITS (EOB)
+
+Insurance Company: Cigna
+Claim Number: CLM1385751
+
+Patient: Howard Harvey
+Member ID: Mxs8485175
+
+Provider: City General Hospital
+NPI: 4567890123
+
+Service Date: 2025-09-04
+Processed Date: 2025-09-27
+
+COVERAGE DETAILS:
+
+✅ Code: 36415
+   Description: Venipuncture
+   Date: 2025-09-13
+   Billed Amount: $27.28
+   Insurance Payment: $22.77
+   Patient Responsibility: $4.51
+
+✅ Code: 93000
+   Description: Electrocardiogram
+   Date: 2025-09-27
+   Billed Amount: $40.85
+   Insurance Payment: $35.43
+   Patient Responsibility: $5.42

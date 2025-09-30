@@ -1,0 +1,66 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "City General Hospital",
+    "npi": "4567890123",
+    "specialty": "Emergency Medicine"
+  },
+  "patient": {
+    "name": "Angel Flores",
+    "dob": "1987-05-19",
+    "member_id": "Cnh4277509",
+    "address": "169 Anthony Fork\nSouth Ashley, SC 35485"
+  },
+  "insurance": {
+    "company": {
+      "name": "Anthem",
+      "code": "ANT"
+    },
+    "policy_number": "POL3526609",
+    "group_number": "GRP55102"
+  },
+  "service_date": "2025-09-23",
+  "billing_date": "2025-09-25",
+  "services": [
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 65.22,
+      "quantity": 1,
+      "date": "2025-09-15"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 68.38,
+      "quantity": 1,
+      "date": "2025-09-10"
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "charge": 160.29,
+      "quantity": 1,
+      "date": "2025-09-13"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 293.89,
+    "insurance_payment": 251.06,
+    "patient_responsibility": 42.83,
+    "deductible": 78.92,
+    "copay": 4.65
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99214",
+      "R50.9",
+      "80053"
+    ],
+    "procedure_codes": [
+      "80053",
+      "85025",
+      "99214"
+    ]
+  }
+}

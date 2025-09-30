@@ -1,0 +1,43 @@
+{
+  "document_type": "eob",
+  "insurance_company": {
+    "name": "Cigna",
+    "code": "CIG"
+  },
+  "patient": {
+    "name": "Howard Harvey",
+    "dob": "1973-08-03",
+    "member_id": "Mxs8485175",
+    "address": "692 Thomas Curve\nSouth Danielle, IA 93120"
+  },
+  "provider": {
+    "name": "City General Hospital",
+    "npi": "4567890123",
+    "specialty": "Emergency Medicine"
+  },
+  "service_date": "2025-09-04",
+  "processed_date": "2025-09-27",
+  "claim_number": "CLM1385751",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "date": "2025-09-13",
+      "billed_amount": 27.28,
+      "insurance_payment": 22.77,
+      "patient_responsibility": 4.51,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "date": "2025-09-27",
+      "billed_amount": 40.85,
+      "insurance_payment": 35.43,
+      "patient_responsibility": 5.42,
+      "coverage_status": "covered",
+      "denial_reason": null
+    }
+  ]
+}

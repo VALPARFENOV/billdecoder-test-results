@@ -1,0 +1,37 @@
+
+MEDICAL BILL
+
+Provider: LabCorp Diagnostics
+NPI: 3456789012
+Specialty: Laboratory Services
+
+Patient: Rebecca Watson
+Date of Birth: 1997-12-23
+Member ID: KfM4211033
+Address: 61399 Kelly Mission Suite 055
+East Marcusmouth, ND 51663
+
+Insurance Company: Humana
+Policy Number: POL3594348
+Group Number: GRP56205
+
+Service Date: 2025-09-21
+Billing Date: 2025-09-21
+
+SERVICES:
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-20
+Quantity: 1
+Charge: $88.26
+
+FINANCIAL SUMMARY:
+Total Charges: $88.26
+Insurance Payment: $60.2
+Patient Responsibility: $28.06
+Deductible: $76.01
+Copay: $34.29
+
+Diagnosis Codes: 99285, K21.9
+Procedure Codes: 80053

@@ -1,0 +1,50 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "City General Hospital",
+    "npi": "4567890123",
+    "specialty": "Emergency Medicine"
+  },
+  "patient": {
+    "name": "Nicholas Garcia",
+    "dob": "1964-01-27",
+    "member_id": "ltd2497193",
+    "address": "7092 Joseph Circle Apt. 825\nEast Lisashire, OH 57691"
+  },
+  "insurance": {
+    "company": {
+      "name": "Blue Cross Blue Shield",
+      "code": "BCBS"
+    },
+    "policy_number": "POL4848170",
+    "group_number": "GRP20757"
+  },
+  "service_date": "2025-09-09",
+  "billing_date": "2025-09-25",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 167.27,
+      "quantity": 1,
+      "date": "2025-09-09"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 167.27,
+    "insurance_payment": 122.94,
+    "patient_responsibility": 44.33,
+    "deductible": 412.32,
+    "copay": 33.99
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99283",
+      "E11.9",
+      "99283"
+    ],
+    "procedure_codes": [
+      "99213"
+    ]
+  }
+}

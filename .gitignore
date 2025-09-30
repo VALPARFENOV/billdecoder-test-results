@@ -1,0 +1,96 @@
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if using Firebase)
+node_modules/
+npm-debug.log*
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# Large files that shouldn't be in repo
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# TestCode folder (contains API keys)
+TestCode/
+
+# Files that might contain API keys
+*.env
+.env.*
+
+# Test results (keep only the final presentation)
+test-results/compact_test_*.json
+test-results/compact_summary_*.md
+test-results/detailed-analysis.md
+test-results/web-presentation-with-data.html
+test-results/web-presentation.html
+
+# Keep only the English presentation and final reports
+!test-results/web-presentation-english.html
+!test-results/README_English_Presentation.md
+!test-results/English_Presentation_Summary.md

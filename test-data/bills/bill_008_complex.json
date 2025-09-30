@@ -1,0 +1,80 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "HealthCare Medical Center",
+    "npi": "1234567890",
+    "specialty": "Internal Medicine"
+  },
+  "patient": {
+    "name": "David Watts",
+    "dob": "1948-11-25",
+    "member_id": "zMB4541651",
+    "address": "6350 Hoover Isle\nDeborahbury, UT 57011"
+  },
+  "insurance": {
+    "company": {
+      "name": "Medicare",
+      "code": "MED"
+    },
+    "policy_number": "POL0535533",
+    "group_number": "GRP28141"
+  },
+  "service_date": "2025-09-02",
+  "billing_date": "2025-09-15",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 151.0,
+      "quantity": 1,
+      "date": "2025-09-02"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 55.82,
+      "quantity": 1,
+      "date": "2025-09-09"
+    },
+    {
+      "code": "99284",
+      "description": "Emergency department visit, level 4",
+      "charge": 920.51,
+      "quantity": 1,
+      "date": "2025-09-24"
+    },
+    {
+      "code": "36415",
+      "description": "Additional venipuncture",
+      "charge": 20.97,
+      "quantity": 1,
+      "date": "2025-09-18"
+    },
+    {
+      "code": "80053",
+      "description": "Comprehensive metabolic panel",
+      "charge": 112.94,
+      "quantity": 2,
+      "date": "2025-09-10"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 1261.24,
+    "insurance_payment": 1114.9,
+    "patient_responsibility": 146.34,
+    "deductible": 233.15,
+    "copay": 15.91
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "36415"
+    ],
+    "procedure_codes": [
+      "99213",
+      "85025",
+      "99284",
+      "36415",
+      "80053"
+    ]
+  }
+}

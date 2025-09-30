@@ -1,0 +1,66 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Endocrine Care Center",
+    "npi": "5678901234",
+    "specialty": "Endocrinology"
+  },
+  "patient": {
+    "name": "Amanda Jones MD",
+    "dob": "2005-07-08",
+    "member_id": "Ikk5707048",
+    "address": "27044 Gregory Crest\nPerkinsmouth, TN 16969"
+  },
+  "insurance": {
+    "company": {
+      "name": "Cigna",
+      "code": "CIG"
+    },
+    "policy_number": "POL7658199",
+    "group_number": "GRP37450"
+  },
+  "service_date": "2025-09-03",
+  "billing_date": "2025-09-28",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 26.71,
+      "quantity": 1,
+      "date": "2025-09-23"
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "charge": 41.64,
+      "quantity": 1,
+      "date": "2025-09-28"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 52.95,
+      "quantity": 1,
+      "date": "2025-09-19"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 121.3,
+    "insurance_payment": 77.09,
+    "patient_responsibility": 44.21,
+    "deductible": 494.7,
+    "copay": 27.81
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "M79.3",
+      "85025",
+      "93000"
+    ],
+    "procedure_codes": [
+      "36415",
+      "93000",
+      "85025"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Family Practice Associates",
+    "npi": "6789012345",
+    "specialty": "Family Medicine"
+  },
+  "patient": {
+    "name": "Glenn Perkins",
+    "dob": "1963-03-01",
+    "member_id": "oCb0274541",
+    "address": "21614 Patricia Centers Suite 813\nNorth Lisa, OH 55712"
+  },
+  "insurance": {
+    "company": {
+      "name": "Humana",
+      "code": "HUM"
+    },
+    "policy_number": "POL4741657",
+    "group_number": "GRP54035"
+  },
+  "service_date": "2025-09-18",
+  "billing_date": "2025-09-28",
+  "services": [
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 74.03,
+      "quantity": 1,
+      "date": "2025-09-03"
+    },
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 178.65,
+      "quantity": 1,
+      "date": "2025-09-12"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 252.68,
+    "insurance_payment": 198.69,
+    "patient_responsibility": 53.99,
+    "deductible": 11.18,
+    "copay": 34.99
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "M79.3"
+    ],
+    "procedure_codes": [
+      "80053",
+      "99213"
+    ]
+  }
+}

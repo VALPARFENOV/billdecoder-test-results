@@ -1,0 +1,98 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Endocrine Care Center",
+    "npi": "5678901234",
+    "specialty": "Endocrinology"
+  },
+  "patient": {
+    "name": "Norma Le",
+    "dob": "1964-05-05",
+    "member_id": "yRN0922641",
+    "address": "PSC 2681, Box 9889\nAPO AP 72920"
+  },
+  "insurance": {
+    "company": {
+      "name": "Medicare",
+      "code": "MED"
+    },
+    "policy_number": "POL9757798",
+    "group_number": "GRP75690"
+  },
+  "service_date": "2025-09-21",
+  "billing_date": "2025-09-27",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 176.37,
+      "quantity": 1,
+      "date": "2025-09-12"
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 81.34,
+      "quantity": 1,
+      "date": "2025-09-08"
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "charge": 50.95,
+      "quantity": 1,
+      "date": "2025-09-22"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 63.32,
+      "quantity": 1,
+      "date": "2025-09-15"
+    },
+    {
+      "code": "80053",
+      "description": "Comprehensive metabolic panel",
+      "charge": 102.79,
+      "quantity": 3,
+      "date": "2025-09-22"
+    },
+    {
+      "code": "99284",
+      "description": "Emergency department visit, level 4",
+      "charge": 730.66,
+      "quantity": 1,
+      "date": "2025-09-23"
+    },
+    {
+      "code": "36415",
+      "description": "Additional venipuncture",
+      "charge": 24.44,
+      "quantity": 2,
+      "date": "2025-09-27"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 1229.87,
+    "insurance_payment": 885.17,
+    "patient_responsibility": 344.7,
+    "deductible": 370.6,
+    "copay": 2.79
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99213",
+      "Z00.00",
+      "M79.3"
+    ],
+    "procedure_codes": [
+      "99213",
+      "80053",
+      "93000",
+      "85025",
+      "80053",
+      "99284",
+      "36415"
+    ]
+  }
+}

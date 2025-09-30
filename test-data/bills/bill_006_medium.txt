@@ -1,0 +1,49 @@
+
+MEDICAL BILL
+
+Provider: Regional Medical Group
+NPI: 8901234567
+Specialty: Primary Care
+
+Patient: Jill Skinner
+Date of Birth: 2006-11-08
+Member ID: tYf0773130
+Address: 084 Snyder Via Apt. 346
+Sanchezchester, NH 59331
+
+Insurance Company: UnitedHealthcare
+Policy Number: POL5712904
+Group Number: GRP94336
+
+Service Date: 2025-08-31
+Billing Date: 2025-09-10
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-12
+Quantity: 1
+Charge: $24.25
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-17
+Quantity: 1
+Charge: $58.91
+
+Code: 93000
+Description: Electrocardiogram
+Date: 2025-09-06
+Quantity: 1
+Charge: $49.07
+
+FINANCIAL SUMMARY:
+Total Charges: $132.23
+Insurance Payment: $105.07
+Patient Responsibility: $27.16
+Deductible: $116.1
+Copay: $24.56
+
+Diagnosis Codes: 99282, I10, 99214
+Procedure Codes: 36415, 85025, 93000

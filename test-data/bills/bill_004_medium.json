@@ -1,0 +1,65 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Family Practice Associates",
+    "npi": "6789012345",
+    "specialty": "Family Medicine"
+  },
+  "patient": {
+    "name": "Mason Rose",
+    "dob": "1950-01-27",
+    "member_id": "gUs0014431",
+    "address": "6024 Manning Valleys\nSouth Jason, SC 22369"
+  },
+  "insurance": {
+    "company": {
+      "name": "Anthem",
+      "code": "ANT"
+    },
+    "policy_number": "POL1356486",
+    "group_number": "GRP93999"
+  },
+  "service_date": "2025-08-31",
+  "billing_date": "2025-08-31",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 147.98,
+      "quantity": 1,
+      "date": "2025-09-23"
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "charge": 213.01,
+      "quantity": 1,
+      "date": "2025-09-06"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 53.39,
+      "quantity": 1,
+      "date": "2025-09-14"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 414.38,
+    "insurance_payment": 329.32,
+    "patient_responsibility": 85.06,
+    "deductible": 335.12,
+    "copay": 32.15
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "R50.9",
+      "99214"
+    ],
+    "procedure_codes": [
+      "99213",
+      "99214",
+      "85025"
+    ]
+  }
+}

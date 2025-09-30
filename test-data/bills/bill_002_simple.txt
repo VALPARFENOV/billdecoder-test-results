@@ -1,0 +1,43 @@
+
+MEDICAL BILL
+
+Provider: CardioPlus Clinic
+NPI: 2345678901
+Specialty: Cardiology
+
+Patient: Darrell Wallace
+Date of Birth: 2005-07-03
+Member ID: zjy2513033
+Address: 44241 Leslie Circles Suite 973
+Jacobmouth, ME 02002
+
+Insurance Company: Cigna
+Policy Number: POL0396961
+Group Number: GRP32610
+
+Service Date: 2025-09-24
+Billing Date: 2025-09-26
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-06
+Quantity: 1
+Charge: $154.37
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-06
+Quantity: 1
+Charge: $169.80700000000002
+
+FINANCIAL SUMMARY:
+Total Charges: $324.18
+Insurance Payment: $229.46
+Patient Responsibility: $94.72
+Deductible: $382.51
+Copay: $26.7
+
+Diagnosis Codes: G0008, I10
+Procedure Codes: 99213, 99213

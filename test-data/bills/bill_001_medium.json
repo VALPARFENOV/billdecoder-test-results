@@ -1,0 +1,58 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Metro Urgent Care",
+    "npi": "7890123456",
+    "specialty": "Urgent Care"
+  },
+  "patient": {
+    "name": "Phillip Adkins",
+    "dob": "1965-02-12",
+    "member_id": "gnT7211738",
+    "address": "96786 Howell Via Apt. 634\nPort Michaelborough, MI 31608"
+  },
+  "insurance": {
+    "company": {
+      "name": "Medicare",
+      "code": "MED"
+    },
+    "policy_number": "POL8756235",
+    "group_number": "GRP32073"
+  },
+  "service_date": "2025-09-12",
+  "billing_date": "2025-09-21",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 25.68,
+      "quantity": 1,
+      "date": "2025-09-05"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 54.56,
+      "quantity": 1,
+      "date": "2025-09-20"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 80.24,
+    "insurance_payment": 69.76,
+    "patient_responsibility": 10.48,
+    "deductible": 294.08,
+    "copay": 14.98
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "I10",
+      "99213",
+      "36415"
+    ],
+    "procedure_codes": [
+      "36415",
+      "85025"
+    ]
+  }
+}

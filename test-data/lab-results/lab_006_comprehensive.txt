@@ -1,0 +1,42 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Amanda Butler
+Date of Birth: 1998-01-11
+Gender: F
+Member ID: KOA3603641
+
+Test Date: 2025-09-21
+Report Date: 2025-09-22
+
+Ordering Physician: Kimberly Hahn
+NPI: 0061652585
+Specialty: Internal Medicine
+
+RESULTS:
+
+✅ Glucose: 79.86 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 133.16 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 46.18 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 67.87 mg/dL (normal: <100)
+
+✅ Triglycerides: 132.36 mg/dL (normal: <150)
+
+✅ Hemoglobin: 15.43 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 43.58 % (normal: 36-46)
+
+✅ White Blood Cells: 6.43 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 247.08 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.61 mg/dL (normal: 0.6-1.2)
+
+CLINICAL NOTES:
+All laboratory values are within normal limits. Continue current treatment as prescribed.

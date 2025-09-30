@@ -1,0 +1,90 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Joy White
+Date of Birth: 1999-11-16
+Gender: M
+Member ID: Hem7427117
+
+Test Date: 2025-09-16
+Report Date: 2025-09-19
+
+Ordering Physician: Tracy Davis
+NPI: 6179246436
+Specialty: Cardiology
+
+RESULTS:
+
+✅ Glucose: 77.79 mg/dL (normal: 70-100)
+
+⚠️ Total Cholesterol: 43.44 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 47.86 mg/dL (normal: >40)
+
+⚠️ LDL Cholesterol: 22.86 mg/dL (normal: <100)
+
+❌ Triglycerides: 38.49 mg/dL (normal: <150)
+
+✅ Hemoglobin: 13.09 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 39.09 % (normal: 36-46)
+
+✅ White Blood Cells: 6.42 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 187.21 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.84 mg/dL (normal: 0.6-1.2)
+
+✅ ALT: 16.18 U/L (normal: 7-56)
+
+✅ AST: 27.38 U/L (normal: 10-40)
+
+⚠️ TSH: 9.11 mIU/L (normal: 0.4-4.0)
+
+✅ Free T4: 1.39 ng/dL (normal: 0.8-1.8)
+
+TREND DATA:
+
+Date: 2025-06-18
+  Hematocrit: 44.98 %
+  Platelets: 447.71 K/uL
+  Triglycerides: 81.11 mg/dL
+  White Blood Cells: 4.85 K/uL
+  AST: 15.08 U/L
+  Creatinine: 1.01 mg/dL
+  Free T4: 1.66 ng/dL
+  Glucose: 97.67 mg/dL
+  Hemoglobin: 13.33 g/dL
+  HDL Cholesterol: 53.15 mg/dL
+  TSH: 3.13 mIU/L
+
+Date: 2025-03-20
+  Total Cholesterol: 178.37 mg/dL
+  Triglycerides: 120.89 mg/dL
+  TSH: 3.9 mIU/L
+  White Blood Cells: 10.65 K/uL
+  AST: 36.83 U/L
+  Platelets: 211.9 K/uL
+  HDL Cholesterol: 46.07 mg/dL
+  Hemoglobin: 13.12 g/dL
+  Creatinine: 1.06 mg/dL
+  LDL Cholesterol: 43.64 mg/dL
+  ALT: 9.33 U/L
+
+Date: 2024-12-20
+  AST: 16.78 U/L
+  Hemoglobin: 14.68 g/dL
+  HDL Cholesterol: 48.86 mg/dL
+  Glucose: 72.53 mg/dL
+
+Date: 2024-09-21
+  LDL Cholesterol: 67.31 mg/dL
+  Platelets: 444.05 K/uL
+  Triglycerides: 86.71 mg/dL
+  AST: 13.19 U/L
+
+CLINICAL NOTES:
+Low Total Cholesterol: 43.44 mg/dL (normal: <200). Low LDL Cholesterol: 22.86 mg/dL (normal: <100). CRITICAL value for Triglycerides: 38.49 mg/dL (normal: <150). Immediate attention required. Elevated TSH: 9.11 mIU/L (normal: 0.4-4.0). Recommend consultation with primary care physician.

@@ -1,0 +1,114 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "Greg Cole",
+    "dob": "1958-03-30",
+    "member_id": "Vmo3038241",
+    "address": "9377 Hansen Place\nPort Timothy, NH 29705"
+  },
+  "insurance": {
+    "company": {
+      "name": "Cigna",
+      "code": "CIG"
+    },
+    "policy_number": "POL4079717",
+    "group_number": "GRP38722"
+  },
+  "service_date": "2025-09-10",
+  "billing_date": "2025-09-10",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 27.54,
+      "quantity": 1,
+      "date": "2025-09-14"
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 67.54,
+      "quantity": 1,
+      "date": "2025-09-11"
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "charge": 202.27,
+      "quantity": 1,
+      "date": "2025-09-15"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 55.93,
+      "quantity": 1,
+      "date": "2025-09-25"
+    },
+    {
+      "code": "99285",
+      "description": "Emergency department visit, level 5",
+      "charge": 1070.78,
+      "quantity": 1,
+      "date": "2025-09-11"
+    },
+    {
+      "code": "80053",
+      "description": "Comprehensive metabolic panel",
+      "charge": 141.36,
+      "quantity": 2,
+      "date": "2025-09-23"
+    },
+    {
+      "code": "99284",
+      "description": "Emergency department visit, level 4",
+      "charge": 682.8,
+      "quantity": 2,
+      "date": "2025-09-05"
+    },
+    {
+      "code": "36415",
+      "description": "Additional venipuncture",
+      "charge": 21.95,
+      "quantity": 3,
+      "date": "2025-09-09"
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 74.29400000000001,
+      "quantity": 1,
+      "date": "2025-09-11"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 2344.46,
+    "insurance_payment": 1811.68,
+    "patient_responsibility": 532.78,
+    "deductible": 351.75,
+    "copay": 26.29
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "R50.9",
+      "99284",
+      "K21.9"
+    ],
+    "procedure_codes": [
+      "36415",
+      "80053",
+      "99214",
+      "85025",
+      "99285",
+      "80053",
+      "99284",
+      "36415",
+      "80053"
+    ]
+  }
+}

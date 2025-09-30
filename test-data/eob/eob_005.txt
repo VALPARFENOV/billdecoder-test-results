@@ -1,0 +1,30 @@
+
+EXPLANATION OF BENEFITS (EOB)
+
+Insurance Company: Cigna
+Claim Number: CLM7528247
+
+Patient: Robert Santana
+Member ID: JLZ3762808
+
+Provider: Endocrine Care Center
+NPI: 5678901234
+
+Service Date: 2025-09-02
+Processed Date: 2025-09-21
+
+COVERAGE DETAILS:
+
+✅ Code: 80053
+   Description: Basic metabolic panel
+   Date: 2025-09-06
+   Billed Amount: $70.39
+   Insurance Payment: $59.15
+   Patient Responsibility: $11.24
+
+✅ Code: 99214
+   Description: Detailed office visit
+   Date: 2025-09-27
+   Billed Amount: $165.21
+   Insurance Payment: $119.91
+   Patient Responsibility: $45.3

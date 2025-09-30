@@ -1,0 +1,43 @@
+
+MEDICAL BILL
+
+Provider: HealthCare Medical Center
+NPI: 1234567890
+Specialty: Internal Medicine
+
+Patient: Alyssa Cunningham
+Date of Birth: 1977-02-22
+Member ID: qHk9044048
+Address: 72046 Amanda Crossing Apt. 579
+Lake Carolmouth, AZ 35694
+
+Insurance Company: UnitedHealthcare
+Policy Number: POL3560727
+Group Number: GRP66589
+
+Service Date: 2025-09-01
+Billing Date: 2025-09-25
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-17
+Quantity: 1
+Charge: $24.34
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-07
+Quantity: 1
+Charge: $65.35
+
+FINANCIAL SUMMARY:
+Total Charges: $89.69
+Insurance Payment: $78.39
+Patient Responsibility: $11.3
+Deductible: $467.41
+Copay: $46.79
+
+Diagnosis Codes: E11.9
+Procedure Codes: 36415, 80053

@@ -1,0 +1,60 @@
+{
+  "document_type": "lab_results",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "Danny Jackson",
+    "dob": "1991-09-05",
+    "member_id": "MYI5702454",
+    "gender": "F"
+  },
+  "test_date": "2025-09-15",
+  "report_date": "2025-09-20",
+  "lab_values": [
+    {
+      "test_name": "Glucose",
+      "value": 207.51,
+      "unit": "mg/dL",
+      "reference_range": "70-100",
+      "status": "high"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 13.36,
+      "unit": "g/dL",
+      "reference_range": "12.0-15.5",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hematocrit",
+      "value": 36.75,
+      "unit": "%",
+      "reference_range": "36-46",
+      "status": "normal"
+    },
+    {
+      "test_name": "White Blood Cells",
+      "value": 4.16,
+      "unit": "K/uL",
+      "reference_range": "4.5-11.0",
+      "status": "critical"
+    },
+    {
+      "test_name": "Platelets",
+      "value": 427.37,
+      "unit": "K/uL",
+      "reference_range": "150-450",
+      "status": "normal"
+    }
+  ],
+  "trend_data": [],
+  "ordering_physician": {
+    "name": "Philip Rich",
+    "npi": "9659721387",
+    "specialty": "Family Medicine"
+  },
+  "clinical_notes": "Elevated Glucose: 207.51 mg/dL (normal: 70-100). CRITICAL value for White Blood Cells: 4.16 K/uL (normal: 4.5-11.0). Immediate attention required. Recommend consultation with primary care physician."
+}

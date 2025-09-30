@@ -1,0 +1,80 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Dominique Edwards
+Date of Birth: 2002-06-12
+Gender: F
+Member ID: zqV0552598
+
+Test Date: 2025-09-10
+Report Date: 2025-09-24
+
+Ordering Physician: Mackenzie Craig
+NPI: 4478669092
+Specialty: Cardiology
+
+RESULTS:
+
+✅ Glucose: 83.24 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 85.96 mg/dL (normal: <200)
+
+⚠️ HDL Cholesterol: 97.88 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 60.23 mg/dL (normal: <100)
+
+✅ Triglycerides: 99.79 mg/dL (normal: <150)
+
+✅ Hemoglobin: 12.86 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 40.47 % (normal: 36-46)
+
+✅ White Blood Cells: 6.47 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 358.52 K/uL (normal: 150-450)
+
+❌ Creatinine: 0.39 mg/dL (normal: 0.6-1.2)
+
+TREND DATA:
+
+Date: 2025-06-12
+  White Blood Cells: 10.97 K/uL
+  Glucose: 85.26 mg/dL
+  LDL Cholesterol: 75.97 mg/dL
+  Total Cholesterol: 77.86 mg/dL
+  Platelets: 253.72 K/uL
+  Hemoglobin: 13.22 g/dL
+  Creatinine: 1.11 mg/dL
+  Hematocrit: 42.47 %
+  HDL Cholesterol: 45.63 mg/dL
+
+Date: 2025-03-14
+  Platelets: 341.48 K/uL
+  LDL Cholesterol: 81.46 mg/dL
+  Glucose: 97.61 mg/dL
+  Total Cholesterol: 159.25 mg/dL
+  HDL Cholesterol: 56.88 mg/dL
+  Triglycerides: 109.76 mg/dL
+
+Date: 2024-12-14
+  Hemoglobin: 12.54 g/dL
+  Hematocrit: 42.91 %
+  Glucose: 78.42 mg/dL
+
+Date: 2024-09-15
+  Platelets: 329.62 K/uL
+  Triglycerides: 106.18 mg/dL
+  Hematocrit: 39.97 %
+  Creatinine: 0.88 mg/dL
+  LDL Cholesterol: 88.53 mg/dL
+  White Blood Cells: 9.33 K/uL
+  HDL Cholesterol: 55.86 mg/dL
+  Total Cholesterol: 92.38 mg/dL
+  Glucose: 90.37 mg/dL
+  Hemoglobin: 14.57 g/dL
+
+CLINICAL NOTES:
+Elevated HDL Cholesterol: 97.88 mg/dL (normal: >40). CRITICAL value for Creatinine: 0.39 mg/dL (normal: 0.6-1.2). Immediate attention required. Recommend consultation with primary care physician.

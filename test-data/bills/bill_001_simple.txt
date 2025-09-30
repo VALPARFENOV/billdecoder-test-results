@@ -1,0 +1,43 @@
+
+MEDICAL BILL
+
+Provider: Metro Urgent Care
+NPI: 7890123456
+Specialty: Urgent Care
+
+Patient: Chelsea Brock DVM
+Date of Birth: 1995-05-25
+Member ID: jJG3452992
+Address: 92365 Debra Plain Suite 343
+Hooverburgh, PW 70830
+
+Insurance Company: Cigna
+Policy Number: POL5678128
+Group Number: GRP66064
+
+Service Date: 2025-09-22
+Billing Date: 2025-09-29
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-09
+Quantity: 1
+Charge: $172.91
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-05
+Quantity: 1
+Charge: $69.24
+
+FINANCIAL SUMMARY:
+Total Charges: $242.15
+Insurance Payment: $217.17
+Patient Responsibility: $24.98
+Deductible: $171.01
+Copay: $9.46
+
+Diagnosis Codes: 99284
+Procedure Codes: 99213, 80053

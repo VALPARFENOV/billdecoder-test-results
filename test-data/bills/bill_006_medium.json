@@ -1,0 +1,66 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Regional Medical Group",
+    "npi": "8901234567",
+    "specialty": "Primary Care"
+  },
+  "patient": {
+    "name": "Jill Skinner",
+    "dob": "2006-11-08",
+    "member_id": "tYf0773130",
+    "address": "084 Snyder Via Apt. 346\nSanchezchester, NH 59331"
+  },
+  "insurance": {
+    "company": {
+      "name": "UnitedHealthcare",
+      "code": "UHC"
+    },
+    "policy_number": "POL5712904",
+    "group_number": "GRP94336"
+  },
+  "service_date": "2025-08-31",
+  "billing_date": "2025-09-10",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 24.25,
+      "quantity": 1,
+      "date": "2025-09-12"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 58.91,
+      "quantity": 1,
+      "date": "2025-09-17"
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "charge": 49.07,
+      "quantity": 1,
+      "date": "2025-09-06"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 132.23,
+    "insurance_payment": 105.07,
+    "patient_responsibility": 27.16,
+    "deductible": 116.1,
+    "copay": 24.56
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99282",
+      "I10",
+      "99214"
+    ],
+    "procedure_codes": [
+      "36415",
+      "85025",
+      "93000"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+
+EXPLANATION OF BENEFITS (EOB)
+
+Insurance Company: Kaiser Permanente
+Claim Number: CLM1327449
+
+Patient: Monica Jacobson
+Member ID: AKs6147058
+
+Provider: Family Practice Associates
+NPI: 6789012345
+
+Service Date: 2025-09-21
+Processed Date: 2025-09-27
+
+COVERAGE DETAILS:
+
+✅ Code: 99213
+   Description: Office visit
+   Date: 2025-09-03
+   Billed Amount: $170.64
+   Insurance Payment: $151.38
+   Patient Responsibility: $19.26
+
+✅ Code: 80053
+   Description: Basic metabolic panel
+   Date: 2025-09-12
+   Billed Amount: $84.72
+   Insurance Payment: $63.65
+   Patient Responsibility: $21.07
+
+✅ Code: 99214
+   Description: Detailed office visit
+   Date: 2025-09-11
+   Billed Amount: $181.28
+   Insurance Payment: $135.33
+   Patient Responsibility: $45.95
+
+✅ Code: 85025
+   Description: Complete blood count
+   Date: 2025-09-22
+   Billed Amount: $65.55
+   Insurance Payment: $56.61
+   Patient Responsibility: $8.94

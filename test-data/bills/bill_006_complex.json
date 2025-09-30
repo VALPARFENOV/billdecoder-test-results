@@ -1,0 +1,88 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "CardioPlus Clinic",
+    "npi": "2345678901",
+    "specialty": "Cardiology"
+  },
+  "patient": {
+    "name": "Robert Vargas",
+    "dob": "1950-11-08",
+    "member_id": "OKT5212377",
+    "address": "12079 Shannon Via Suite 480\nHollyville, NY 34957"
+  },
+  "insurance": {
+    "company": {
+      "name": "Anthem",
+      "code": "ANT"
+    },
+    "policy_number": "POL8991760",
+    "group_number": "GRP23768"
+  },
+  "service_date": "2025-09-27",
+  "billing_date": "2025-09-28",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 25.24,
+      "quantity": 1,
+      "date": "2025-09-14"
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "charge": 230.19,
+      "quantity": 1,
+      "date": "2025-09-16"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 60.02,
+      "quantity": 1,
+      "date": "2025-09-26"
+    },
+    {
+      "code": "99284",
+      "description": "Emergency department visit, level 4",
+      "charge": 650.39,
+      "quantity": 3,
+      "date": "2025-09-13"
+    },
+    {
+      "code": "80053",
+      "description": "Comprehensive metabolic panel",
+      "charge": 108.25,
+      "quantity": 1,
+      "date": "2025-09-17"
+    },
+    {
+      "code": "99285",
+      "description": "Emergency department visit, level 5",
+      "charge": 972.17,
+      "quantity": 1,
+      "date": "2025-09-08"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 2046.26,
+    "insurance_payment": 1528.6,
+    "patient_responsibility": 517.66,
+    "deductible": 260.82,
+    "copay": 47.52
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "Z00.00"
+    ],
+    "procedure_codes": [
+      "36415",
+      "99214",
+      "85025",
+      "99284",
+      "80053",
+      "99285"
+    ]
+  }
+}

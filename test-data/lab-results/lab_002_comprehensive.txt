@@ -1,0 +1,42 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: James Davis
+Date of Birth: 2005-04-17
+Gender: F
+Member ID: ygv2977867
+
+Test Date: 2025-09-22
+Report Date: 2025-09-26
+
+Ordering Physician: Mrs. Sharon Arroyo MD
+NPI: 4011210765
+Specialty: Family Medicine
+
+RESULTS:
+
+✅ Glucose: 95.34 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 115.61 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 54.64 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 68.12 mg/dL (normal: <100)
+
+✅ Triglycerides: 55.69 mg/dL (normal: <150)
+
+✅ Hemoglobin: 15.49 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 40.63 % (normal: 36-46)
+
+✅ White Blood Cells: 6.3 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 421.68 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.7 mg/dL (normal: 0.6-1.2)
+
+CLINICAL NOTES:
+All laboratory values are within normal limits. Continue current treatment as prescribed.

@@ -1,0 +1,56 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Metro Urgent Care",
+    "npi": "7890123456",
+    "specialty": "Urgent Care"
+  },
+  "patient": {
+    "name": "Chelsea Brock DVM",
+    "dob": "1995-05-25",
+    "member_id": "jJG3452992",
+    "address": "92365 Debra Plain Suite 343\nHooverburgh, PW 70830"
+  },
+  "insurance": {
+    "company": {
+      "name": "Cigna",
+      "code": "CIG"
+    },
+    "policy_number": "POL5678128",
+    "group_number": "GRP66064"
+  },
+  "service_date": "2025-09-22",
+  "billing_date": "2025-09-29",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 172.91,
+      "quantity": 1,
+      "date": "2025-09-09"
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 69.24,
+      "quantity": 1,
+      "date": "2025-09-05"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 242.15,
+    "insurance_payment": 217.17,
+    "patient_responsibility": 24.98,
+    "deductible": 171.01,
+    "copay": 9.46
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99284"
+    ],
+    "procedure_codes": [
+      "99213",
+      "80053"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "document_type": "lab_results",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "Andrea Garcia",
+    "dob": "1999-01-22",
+    "member_id": "wxf7874619",
+    "gender": "F"
+  },
+  "test_date": "2025-09-10",
+  "report_date": "2025-09-25",
+  "lab_values": [
+    {
+      "test_name": "Glucose",
+      "value": 95.18,
+      "unit": "mg/dL",
+      "reference_range": "70-100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 8.77,
+      "unit": "g/dL",
+      "reference_range": "12.0-15.5",
+      "status": "low"
+    },
+    {
+      "test_name": "Hematocrit",
+      "value": 37.4,
+      "unit": "%",
+      "reference_range": "36-46",
+      "status": "normal"
+    },
+    {
+      "test_name": "White Blood Cells",
+      "value": 5.63,
+      "unit": "K/uL",
+      "reference_range": "4.5-11.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Platelets",
+      "value": 344.44,
+      "unit": "K/uL",
+      "reference_range": "150-450",
+      "status": "normal"
+    }
+  ],
+  "trend_data": [],
+  "ordering_physician": {
+    "name": "Thomas Bautista",
+    "npi": "5923221822",
+    "specialty": "Cardiology"
+  },
+  "clinical_notes": "Low Hemoglobin: 8.77 g/dL (normal: 12.0-15.5). Recommend consultation with primary care physician."
+}

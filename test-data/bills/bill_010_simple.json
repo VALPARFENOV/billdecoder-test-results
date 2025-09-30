@@ -1,0 +1,48 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Family Practice Associates",
+    "npi": "6789012345",
+    "specialty": "Family Medicine"
+  },
+  "patient": {
+    "name": "Sharon Maldonado",
+    "dob": "1996-04-10",
+    "member_id": "Ygr1932575",
+    "address": "2928 Alicia Parkway\nWagnershire, MO 23549"
+  },
+  "insurance": {
+    "company": {
+      "name": "Aetna",
+      "code": "AET"
+    },
+    "policy_number": "POL6602044",
+    "group_number": "GRP50065"
+  },
+  "service_date": "2025-09-18",
+  "billing_date": "2025-09-18",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 150.91,
+      "quantity": 1,
+      "date": "2025-09-18"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 150.91,
+    "insurance_payment": 97.79,
+    "patient_responsibility": 53.12,
+    "deductible": 374.69,
+    "copay": 8.56
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99285"
+    ],
+    "procedure_codes": [
+      "99213"
+    ]
+  }
+}

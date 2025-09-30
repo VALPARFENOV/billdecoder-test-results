@@ -1,0 +1,43 @@
+{
+  "document_type": "eob",
+  "insurance_company": {
+    "name": "Medicare",
+    "code": "MED"
+  },
+  "patient": {
+    "name": "Caitlyn Kelley",
+    "dob": "1945-06-08",
+    "member_id": "fdR2641096",
+    "address": "USNV Morris\nFPO AA 51481"
+  },
+  "provider": {
+    "name": "Regional Medical Group",
+    "npi": "8901234567",
+    "specialty": "Primary Care"
+  },
+  "service_date": "2025-09-22",
+  "processed_date": "2025-09-29",
+  "claim_number": "CLM3952410",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "date": "2025-09-19",
+      "billed_amount": 167.38,
+      "insurance_payment": 0,
+      "patient_responsibility": 167.38,
+      "coverage_status": "denied",
+      "denial_reason": "Prior authorization required"
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "date": "2025-09-07",
+      "billed_amount": 161.72,
+      "insurance_payment": 0,
+      "patient_responsibility": 161.72,
+      "coverage_status": "denied",
+      "denial_reason": "Prior authorization required"
+    }
+  ]
+}

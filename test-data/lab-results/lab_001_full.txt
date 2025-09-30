@@ -1,0 +1,81 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Lauren Key
+Date of Birth: 1959-07-29
+Gender: F
+Member ID: ChU0189417
+
+Test Date: 2025-09-05
+Report Date: 2025-09-14
+
+Ordering Physician: Alexandra Oconnor
+NPI: 8973503780
+Specialty: Endocrinology
+
+RESULTS:
+
+✅ Glucose: 95.96 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 67.58 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 50.28 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 51.94 mg/dL (normal: <100)
+
+✅ Triglycerides: 67.16 mg/dL (normal: <150)
+
+✅ Hemoglobin: 13.52 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 43.62 % (normal: 36-46)
+
+✅ White Blood Cells: 9.23 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 340.21 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.81 mg/dL (normal: 0.6-1.2)
+
+✅ ALT: 22.55 U/L (normal: 7-56)
+
+✅ AST: 30.6 U/L (normal: 10-40)
+
+✅ TSH: 3.94 mIU/L (normal: 0.4-4.0)
+
+✅ Free T4: 0.93 ng/dL (normal: 0.8-1.8)
+
+TREND DATA:
+
+Date: 2025-06-07
+  AST: 17.48 U/L
+  ALT: 27.2 U/L
+  Free T4: 0.95 ng/dL
+
+Date: 2025-03-09
+  Free T4: 1.4 ng/dL
+  LDL Cholesterol: 51.8 mg/dL
+  Glucose: 98.17 mg/dL
+  Platelets: 302.11 K/uL
+  Hematocrit: 37.49 %
+  AST: 10.47 U/L
+
+Date: 2024-12-09
+  TSH: 3.33 mIU/L
+  LDL Cholesterol: 37.02 mg/dL
+  ALT: 29.28 U/L
+
+Date: 2024-09-10
+  Free T4: 1.75 ng/dL
+  Creatinine: 1.15 mg/dL
+  Total Cholesterol: 63.9 mg/dL
+  HDL Cholesterol: 51.12 mg/dL
+  Triglycerides: 105.15 mg/dL
+  TSH: 0.95 mIU/L
+  Hematocrit: 41.15 %
+  Platelets: 263.86 K/uL
+  ALT: 25.04 U/L
+
+CLINICAL NOTES:
+All laboratory values are within normal limits. Continue current treatment as prescribed.

@@ -1,0 +1,56 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "HealthCare Medical Center",
+    "npi": "1234567890",
+    "specialty": "Internal Medicine"
+  },
+  "patient": {
+    "name": "Alyssa Cunningham",
+    "dob": "1977-02-22",
+    "member_id": "qHk9044048",
+    "address": "72046 Amanda Crossing Apt. 579\nLake Carolmouth, AZ 35694"
+  },
+  "insurance": {
+    "company": {
+      "name": "UnitedHealthcare",
+      "code": "UHC"
+    },
+    "policy_number": "POL3560727",
+    "group_number": "GRP66589"
+  },
+  "service_date": "2025-09-01",
+  "billing_date": "2025-09-25",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 24.34,
+      "quantity": 1,
+      "date": "2025-09-17"
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 65.35,
+      "quantity": 1,
+      "date": "2025-09-07"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 89.69,
+    "insurance_payment": 78.39,
+    "patient_responsibility": 11.3,
+    "deductible": 467.41,
+    "copay": 46.79
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "E11.9"
+    ],
+    "procedure_codes": [
+      "36415",
+      "80053"
+    ]
+  }
+}

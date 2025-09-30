@@ -1,0 +1,73 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Endocrine Care Center",
+    "npi": "5678901234",
+    "specialty": "Endocrinology"
+  },
+  "patient": {
+    "name": "Richard Lopez",
+    "dob": "1949-08-20",
+    "member_id": "wLB9603371",
+    "address": "9306 Joshua Motorway Suite 422\nSouth Mark, WY 84186"
+  },
+  "insurance": {
+    "company": {
+      "name": "Cigna",
+      "code": "CIG"
+    },
+    "policy_number": "POL7894890",
+    "group_number": "GRP69770"
+  },
+  "service_date": "2025-09-18",
+  "billing_date": "2025-09-29",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 29.65,
+      "quantity": 1,
+      "date": "2025-09-10"
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "charge": 92.88,
+      "quantity": 1,
+      "date": "2025-09-01"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 68.41,
+      "quantity": 1,
+      "date": "2025-09-02"
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "charge": 53.46,
+      "quantity": 1,
+      "date": "2025-09-08"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 244.4,
+    "insurance_payment": 203.39,
+    "patient_responsibility": 41.01,
+    "deductible": 362.43,
+    "copay": 35.77
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "99281",
+      "Z00.00"
+    ],
+    "procedure_codes": [
+      "36415",
+      "80053",
+      "85025",
+      "93000"
+    ]
+  }
+}

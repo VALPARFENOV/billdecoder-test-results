@@ -1,0 +1,73 @@
+
+MEDICAL BILL
+
+Provider: Endocrine Care Center
+NPI: 5678901234
+Specialty: Endocrinology
+
+Patient: Norma Le
+Date of Birth: 1964-05-05
+Member ID: yRN0922641
+Address: PSC 2681, Box 9889
+APO AP 72920
+
+Insurance Company: Medicare
+Policy Number: POL9757798
+Group Number: GRP75690
+
+Service Date: 2025-09-21
+Billing Date: 2025-09-27
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-12
+Quantity: 1
+Charge: $176.37
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-08
+Quantity: 1
+Charge: $81.34
+
+Code: 93000
+Description: Electrocardiogram
+Date: 2025-09-22
+Quantity: 1
+Charge: $50.95
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-15
+Quantity: 1
+Charge: $63.32
+
+Code: 80053
+Description: Comprehensive metabolic panel
+Date: 2025-09-22
+Quantity: 3
+Charge: $102.79
+
+Code: 99284
+Description: Emergency department visit, level 4
+Date: 2025-09-23
+Quantity: 1
+Charge: $730.66
+
+Code: 36415
+Description: Additional venipuncture
+Date: 2025-09-27
+Quantity: 2
+Charge: $24.44
+
+FINANCIAL SUMMARY:
+Total Charges: $1229.87
+Insurance Payment: $885.17
+Patient Responsibility: $344.7
+Deductible: $370.6
+Copay: $2.79
+
+Diagnosis Codes: 99213, Z00.00, M79.3
+Procedure Codes: 99213, 80053, 93000, 85025, 80053, 99284, 36415

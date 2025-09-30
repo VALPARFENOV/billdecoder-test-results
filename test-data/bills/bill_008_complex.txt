@@ -1,0 +1,61 @@
+
+MEDICAL BILL
+
+Provider: HealthCare Medical Center
+NPI: 1234567890
+Specialty: Internal Medicine
+
+Patient: David Watts
+Date of Birth: 1948-11-25
+Member ID: zMB4541651
+Address: 6350 Hoover Isle
+Deborahbury, UT 57011
+
+Insurance Company: Medicare
+Policy Number: POL0535533
+Group Number: GRP28141
+
+Service Date: 2025-09-02
+Billing Date: 2025-09-15
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-02
+Quantity: 1
+Charge: $151.0
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-09
+Quantity: 1
+Charge: $55.82
+
+Code: 99284
+Description: Emergency department visit, level 4
+Date: 2025-09-24
+Quantity: 1
+Charge: $920.51
+
+Code: 36415
+Description: Additional venipuncture
+Date: 2025-09-18
+Quantity: 1
+Charge: $20.97
+
+Code: 80053
+Description: Comprehensive metabolic panel
+Date: 2025-09-10
+Quantity: 2
+Charge: $112.94
+
+FINANCIAL SUMMARY:
+Total Charges: $1261.24
+Insurance Payment: $1114.9
+Patient Responsibility: $146.34
+Deductible: $233.15
+Copay: $15.91
+
+Diagnosis Codes: 36415
+Procedure Codes: 99213, 85025, 99284, 36415, 80053

@@ -1,0 +1,43 @@
+{
+  "document_type": "eob",
+  "insurance_company": {
+    "name": "Aetna",
+    "code": "AET"
+  },
+  "patient": {
+    "name": "Brett Moses",
+    "dob": "1965-11-30",
+    "member_id": "UeO3454781",
+    "address": "PSC 1566, Box 0380\nAPO AA 30136"
+  },
+  "provider": {
+    "name": "Regional Medical Group",
+    "npi": "8901234567",
+    "specialty": "Primary Care"
+  },
+  "service_date": "2025-09-25",
+  "processed_date": "2025-09-29",
+  "claim_number": "CLM2663155",
+  "services": [
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "date": "2025-09-14",
+      "billed_amount": 78.99,
+      "insurance_payment": 59.55,
+      "patient_responsibility": 19.44,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "date": "2025-09-09",
+      "billed_amount": 44.4,
+      "insurance_payment": 33.65,
+      "patient_responsibility": 10.75,
+      "coverage_status": "covered",
+      "denial_reason": null
+    }
+  ]
+}

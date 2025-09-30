@@ -1,0 +1,110 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "Endocrine Care Center",
+    "npi": "5678901234",
+    "specialty": "Endocrinology"
+  },
+  "patient": {
+    "name": "Joshua Harris",
+    "dob": "1986-04-24",
+    "member_id": "aYY5307486",
+    "address": "PSC 2656, Box 8379\nAPO AA 03727"
+  },
+  "insurance": {
+    "company": {
+      "name": "Humana",
+      "code": "HUM"
+    },
+    "policy_number": "POL8592397",
+    "group_number": "GRP16913"
+  },
+  "service_date": "2025-09-07",
+  "billing_date": "2025-09-15",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 146.14,
+      "quantity": 1,
+      "date": "2025-09-17"
+    },
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 25.95,
+      "quantity": 1,
+      "date": "2025-09-22"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 64.92,
+      "quantity": 1,
+      "date": "2025-09-28"
+    },
+    {
+      "code": "93000",
+      "description": "Electrocardiogram",
+      "charge": 38.61,
+      "quantity": 1,
+      "date": "2025-09-21"
+    },
+    {
+      "code": "36415",
+      "description": "Additional venipuncture",
+      "charge": 25.71,
+      "quantity": 3,
+      "date": "2025-09-09"
+    },
+    {
+      "code": "80048",
+      "description": "Basic metabolic panel",
+      "charge": 69.654
+    },
+    {
+      "code": "80051",
+      "description": "Electrolytes",
+      "charge": 46.43600000000001
+    },
+    {
+      "code": "99284",
+      "description": "Emergency department visit, level 4",
+      "charge": 828.68,
+      "quantity": 3,
+      "date": "2025-09-13"
+    },
+    {
+      "code": "99285",
+      "description": "Emergency department visit, level 5",
+      "charge": 1110.6,
+      "quantity": 1,
+      "date": "2025-09-06"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 2356.7,
+    "insurance_payment": 1805.67,
+    "patient_responsibility": 551.03,
+    "deductible": 354.57,
+    "copay": 25.72
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "93000",
+      "G0008",
+      "80053"
+    ],
+    "procedure_codes": [
+      "99213",
+      "36415",
+      "85025",
+      "93000",
+      "36415",
+      "80048",
+      "80051",
+      "99284",
+      "99285"
+    ]
+  }
+}

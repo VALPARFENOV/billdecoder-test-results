@@ -1,0 +1,85 @@
+
+MEDICAL BILL
+
+Provider: LabCorp Diagnostics
+NPI: 3456789012
+Specialty: Laboratory Services
+
+Patient: Greg Cole
+Date of Birth: 1958-03-30
+Member ID: Vmo3038241
+Address: 9377 Hansen Place
+Port Timothy, NH 29705
+
+Insurance Company: Cigna
+Policy Number: POL4079717
+Group Number: GRP38722
+
+Service Date: 2025-09-10
+Billing Date: 2025-09-10
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-14
+Quantity: 1
+Charge: $27.54
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-11
+Quantity: 1
+Charge: $67.54
+
+Code: 99214
+Description: Detailed office visit
+Date: 2025-09-15
+Quantity: 1
+Charge: $202.27
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-25
+Quantity: 1
+Charge: $55.93
+
+Code: 99285
+Description: Emergency department visit, level 5
+Date: 2025-09-11
+Quantity: 1
+Charge: $1070.78
+
+Code: 80053
+Description: Comprehensive metabolic panel
+Date: 2025-09-23
+Quantity: 2
+Charge: $141.36
+
+Code: 99284
+Description: Emergency department visit, level 4
+Date: 2025-09-05
+Quantity: 2
+Charge: $682.8
+
+Code: 36415
+Description: Additional venipuncture
+Date: 2025-09-09
+Quantity: 3
+Charge: $21.95
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-11
+Quantity: 1
+Charge: $74.29400000000001
+
+FINANCIAL SUMMARY:
+Total Charges: $2344.46
+Insurance Payment: $1811.68
+Patient Responsibility: $532.78
+Deductible: $351.75
+Copay: $26.29
+
+Diagnosis Codes: R50.9, 99284, K21.9
+Procedure Codes: 36415, 80053, 99214, 85025, 99285, 80053, 99284, 36415, 80053

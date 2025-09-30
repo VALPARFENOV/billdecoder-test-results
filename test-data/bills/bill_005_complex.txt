@@ -1,0 +1,61 @@
+
+MEDICAL BILL
+
+Provider: LabCorp Diagnostics
+NPI: 3456789012
+Specialty: Laboratory Services
+
+Patient: Caroline Maldonado
+Date of Birth: 1969-02-19
+Member ID: LpF8456856
+Address: USCGC Harris
+FPO AE 89232
+
+Insurance Company: Kaiser Permanente
+Policy Number: POL8658643
+Group Number: GRP81561
+
+Service Date: 2025-08-31
+Billing Date: 2025-08-31
+
+SERVICES:
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-08-01
+Quantity: 1
+Charge: $67.24
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-08-29
+Quantity: 1
+Charge: $23.09
+
+Code: 99214
+Description: Detailed office visit
+Date: 2025-08-25
+Quantity: 1
+Charge: $166.47
+
+Code: 36415
+Description: Additional venipuncture
+Date: 2025-08-26
+Quantity: 3
+Charge: $23.19
+
+Code: 80053
+Description: Comprehensive metabolic panel
+Date: 2025-09-29
+Quantity: 2
+Charge: $127.26
+
+FINANCIAL SUMMARY:
+Total Charges: $407.25
+Insurance Payment: $291.59
+Patient Responsibility: $115.66
+Deductible: $167.71
+Copay: $31.76
+
+Diagnosis Codes: 36415, 99213
+Procedure Codes: 80053, 36415, 99214, 36415, 80053

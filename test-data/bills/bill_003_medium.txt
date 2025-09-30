@@ -1,0 +1,49 @@
+
+MEDICAL BILL
+
+Provider: Endocrine Care Center
+NPI: 5678901234
+Specialty: Endocrinology
+
+Patient: Amanda Jones MD
+Date of Birth: 2005-07-08
+Member ID: Ikk5707048
+Address: 27044 Gregory Crest
+Perkinsmouth, TN 16969
+
+Insurance Company: Cigna
+Policy Number: POL7658199
+Group Number: GRP37450
+
+Service Date: 2025-09-03
+Billing Date: 2025-09-28
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-23
+Quantity: 1
+Charge: $26.71
+
+Code: 93000
+Description: Electrocardiogram
+Date: 2025-09-28
+Quantity: 1
+Charge: $41.64
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-19
+Quantity: 1
+Charge: $52.95
+
+FINANCIAL SUMMARY:
+Total Charges: $121.3
+Insurance Payment: $77.09
+Patient Responsibility: $44.21
+Deductible: $494.7
+Copay: $27.81
+
+Diagnosis Codes: M79.3, 85025, 93000
+Procedure Codes: 36415, 93000, 85025

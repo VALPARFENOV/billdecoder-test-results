@@ -1,0 +1,61 @@
+
+MEDICAL BILL
+
+Provider: HealthCare Medical Center
+NPI: 1234567890
+Specialty: Internal Medicine
+
+Patient: Matthew Maynard
+Date of Birth: 2004-12-28
+Member ID: sFP1331809
+Address: 466 Mason Unions Apt. 646
+Claytonborough, GA 74593
+
+Insurance Company: Kaiser Permanente
+Policy Number: POL7850164
+Group Number: GRP76631
+
+Service Date: 2025-09-22
+Billing Date: 2025-09-22
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-02
+Quantity: 1
+Charge: $23.6
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-07
+Quantity: 1
+Charge: $61.78
+
+Code: 80053
+Description: Comprehensive metabolic panel
+Date: 2025-09-13
+Quantity: 1
+Charge: $114.02
+
+Code: 36415
+Description: Additional venipuncture
+Date: 2025-09-11
+Quantity: 2
+Charge: $28.54
+
+Code: 99285
+Description: Emergency department visit, level 5
+Date: 2025-09-29
+Quantity: 3
+Charge: $1268.95
+
+FINANCIAL SUMMARY:
+Total Charges: $1496.89
+Insurance Payment: $1242.95
+Patient Responsibility: $253.94
+Deductible: $262.64
+Copay: $40.59
+
+Diagnosis Codes: 93000
+Procedure Codes: 36415, 85025, 80053, 36415, 99285

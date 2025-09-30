@@ -1,0 +1,37 @@
+
+MEDICAL BILL
+
+Provider: City General Hospital
+NPI: 4567890123
+Specialty: Emergency Medicine
+
+Patient: Nicholas Garcia
+Date of Birth: 1964-01-27
+Member ID: ltd2497193
+Address: 7092 Joseph Circle Apt. 825
+East Lisashire, OH 57691
+
+Insurance Company: Blue Cross Blue Shield
+Policy Number: POL4848170
+Group Number: GRP20757
+
+Service Date: 2025-09-09
+Billing Date: 2025-09-25
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-09
+Quantity: 1
+Charge: $167.27
+
+FINANCIAL SUMMARY:
+Total Charges: $167.27
+Insurance Payment: $122.94
+Patient Responsibility: $44.33
+Deductible: $412.32
+Copay: $33.99
+
+Diagnosis Codes: 99283, E11.9, 99283
+Procedure Codes: 99213

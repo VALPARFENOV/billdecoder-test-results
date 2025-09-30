@@ -1,0 +1,32 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Danny Jackson
+Date of Birth: 1991-09-05
+Gender: F
+Member ID: MYI5702454
+
+Test Date: 2025-09-15
+Report Date: 2025-09-20
+
+Ordering Physician: Philip Rich
+NPI: 9659721387
+Specialty: Family Medicine
+
+RESULTS:
+
+⚠️ Glucose: 207.51 mg/dL (normal: 70-100)
+
+✅ Hemoglobin: 13.36 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 36.75 % (normal: 36-46)
+
+❌ White Blood Cells: 4.16 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 427.37 K/uL (normal: 150-450)
+
+CLINICAL NOTES:
+Elevated Glucose: 207.51 mg/dL (normal: 70-100). CRITICAL value for White Blood Cells: 4.16 K/uL (normal: 4.5-11.0). Immediate attention required. Recommend consultation with primary care physician.

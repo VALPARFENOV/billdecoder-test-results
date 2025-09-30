@@ -1,0 +1,57 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "CardioPlus Clinic",
+    "npi": "2345678901",
+    "specialty": "Cardiology"
+  },
+  "patient": {
+    "name": "Darrell Wallace",
+    "dob": "2005-07-03",
+    "member_id": "zjy2513033",
+    "address": "44241 Leslie Circles Suite 973\nJacobmouth, ME 02002"
+  },
+  "insurance": {
+    "company": {
+      "name": "Cigna",
+      "code": "CIG"
+    },
+    "policy_number": "POL0396961",
+    "group_number": "GRP32610"
+  },
+  "service_date": "2025-09-24",
+  "billing_date": "2025-09-26",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 154.37,
+      "quantity": 1,
+      "date": "2025-09-06"
+    },
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "charge": 169.80700000000002,
+      "quantity": 1,
+      "date": "2025-09-06"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 324.18,
+    "insurance_payment": 229.46,
+    "patient_responsibility": 94.72,
+    "deductible": 382.51,
+    "copay": 26.7
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "G0008",
+      "I10"
+    ],
+    "procedure_codes": [
+      "99213",
+      "99213"
+    ]
+  }
+}

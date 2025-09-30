@@ -1,0 +1,53 @@
+{
+  "document_type": "eob",
+  "insurance_company": {
+    "name": "Aetna",
+    "code": "AET"
+  },
+  "patient": {
+    "name": "Katherine Melton",
+    "dob": "1967-12-14",
+    "member_id": "DhZ6815607",
+    "address": "29685 Gibbs Fall Suite 258\nLake Zacharyville, RI 73927"
+  },
+  "provider": {
+    "name": "Family Practice Associates",
+    "npi": "6789012345",
+    "specialty": "Family Medicine"
+  },
+  "service_date": "2025-09-21",
+  "processed_date": "2025-09-21",
+  "claim_number": "CLM9290291",
+  "services": [
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "date": "2025-09-28",
+      "billed_amount": 73.69,
+      "insurance_payment": 59.53,
+      "patient_responsibility": 14.16,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "date": "2025-09-24",
+      "billed_amount": 20.34,
+      "insurance_payment": 16.6,
+      "patient_responsibility": 3.74,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "date": "2025-09-18",
+      "billed_amount": 53.21,
+      "insurance_payment": 42.82,
+      "patient_responsibility": 10.39,
+      "coverage_status": "covered",
+      "denial_reason": null
+    }
+  ]
+}

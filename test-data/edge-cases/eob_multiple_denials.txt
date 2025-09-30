@@ -1,0 +1,32 @@
+
+EXPLANATION OF BENEFITS (EOB)
+
+Insurance Company: Medicare
+Claim Number: CLM3952410
+
+Patient: Caitlyn Kelley
+Member ID: fdR2641096
+
+Provider: Regional Medical Group
+NPI: 8901234567
+
+Service Date: 2025-09-22
+Processed Date: 2025-09-29
+
+COVERAGE DETAILS:
+
+❌ Code: 99213
+   Description: Office visit
+   Date: 2025-09-19
+   Billed Amount: $167.38
+   Insurance Payment: $0
+   Patient Responsibility: $167.38
+   Denial Reason: Prior authorization required
+
+❌ Code: 99214
+   Description: Detailed office visit
+   Date: 2025-09-07
+   Billed Amount: $161.72
+   Insurance Payment: $0
+   Patient Responsibility: $161.72
+   Denial Reason: Prior authorization required

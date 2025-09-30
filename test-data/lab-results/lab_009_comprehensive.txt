@@ -1,0 +1,73 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: David Figueroa
+Date of Birth: 1956-11-10
+Gender: M
+Member ID: hwV9465437
+
+Test Date: 2025-09-05
+Report Date: 2025-09-10
+
+Ordering Physician: Ricardo Wilson
+NPI: 6962264825
+Specialty: Cardiology
+
+RESULTS:
+
+✅ Glucose: 84.36 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 117.06 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 59.92 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 86.95 mg/dL (normal: <100)
+
+✅ Triglycerides: 112.11 mg/dL (normal: <150)
+
+✅ Hemoglobin: 15.06 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 43.23 % (normal: 36-46)
+
+✅ White Blood Cells: 7.14 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 402.08 K/uL (normal: 150-450)
+
+✅ Creatinine: 1.13 mg/dL (normal: 0.6-1.2)
+
+TREND DATA:
+
+Date: 2025-06-07
+  Triglycerides: 100.32 mg/dL
+  White Blood Cells: 8.13 K/uL
+  HDL Cholesterol: 48.98 mg/dL
+  Glucose: 76.27 mg/dL
+  LDL Cholesterol: 68.01 mg/dL
+
+Date: 2025-03-09
+  Platelets: 353.13 K/uL
+  LDL Cholesterol: 61.74 mg/dL
+  Total Cholesterol: 136.97 mg/dL
+  HDL Cholesterol: 57.34 mg/dL
+  Glucose: 80.86 mg/dL
+  Creatinine: 1.02 mg/dL
+  Triglycerides: 74.42 mg/dL
+  White Blood Cells: 8.93 K/uL
+  Hemoglobin: 14.99 g/dL
+
+Date: 2024-12-09
+  Glucose: 87.22 mg/dL
+  Platelets: 332.64 K/uL
+  Hemoglobin: 12.15 g/dL
+
+Date: 2024-09-10
+  Total Cholesterol: 84.16 mg/dL
+  Glucose: 85.61 mg/dL
+  LDL Cholesterol: 41.2 mg/dL
+  Platelets: 203.16 K/uL
+
+CLINICAL NOTES:
+All laboratory values are within normal limits. Continue current treatment as prescribed.

@@ -1,0 +1,312 @@
+{
+  "document_type": "lab_results",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "Dominique Edwards",
+    "dob": "2002-06-12",
+    "member_id": "zqV0552598",
+    "gender": "F"
+  },
+  "test_date": "2025-09-10",
+  "report_date": "2025-09-24",
+  "lab_values": [
+    {
+      "test_name": "Glucose",
+      "value": 83.24,
+      "unit": "mg/dL",
+      "reference_range": "70-100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Total Cholesterol",
+      "value": 85.96,
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "status": "normal"
+    },
+    {
+      "test_name": "HDL Cholesterol",
+      "value": 97.88,
+      "unit": "mg/dL",
+      "reference_range": ">40",
+      "status": "high"
+    },
+    {
+      "test_name": "LDL Cholesterol",
+      "value": 60.23,
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Triglycerides",
+      "value": 99.79,
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 12.86,
+      "unit": "g/dL",
+      "reference_range": "12.0-15.5",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hematocrit",
+      "value": 40.47,
+      "unit": "%",
+      "reference_range": "36-46",
+      "status": "normal"
+    },
+    {
+      "test_name": "White Blood Cells",
+      "value": 6.47,
+      "unit": "K/uL",
+      "reference_range": "4.5-11.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Platelets",
+      "value": 358.52,
+      "unit": "K/uL",
+      "reference_range": "150-450",
+      "status": "normal"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 0.39,
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.2",
+      "status": "critical"
+    }
+  ],
+  "trend_data": [
+    {
+      "date": "2025-06-12",
+      "values": [
+        {
+          "test_name": "White Blood Cells",
+          "value": 10.97,
+          "unit": "K/uL",
+          "reference_range": "4.5-11.0",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 85.26,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 75.97,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Total Cholesterol",
+          "value": 77.86,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "status": "normal"
+        },
+        {
+          "test_name": "Platelets",
+          "value": 253.72,
+          "unit": "K/uL",
+          "reference_range": "150-450",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.22,
+          "unit": "g/dL",
+          "reference_range": "12.0-15.5",
+          "status": "normal"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.11,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hematocrit",
+          "value": 42.47,
+          "unit": "%",
+          "reference_range": "36-46",
+          "status": "normal"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 45.63,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "status": "normal"
+        }
+      ]
+    },
+    {
+      "date": "2025-03-14",
+      "values": [
+        {
+          "test_name": "Platelets",
+          "value": 341.48,
+          "unit": "K/uL",
+          "reference_range": "150-450",
+          "status": "normal"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 81.46,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 97.61,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Total Cholesterol",
+          "value": 159.25,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "status": "normal"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 56.88,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "status": "normal"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 109.76,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "status": "normal"
+        }
+      ]
+    },
+    {
+      "date": "2024-12-14",
+      "values": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 12.54,
+          "unit": "g/dL",
+          "reference_range": "12.0-15.5",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hematocrit",
+          "value": 42.91,
+          "unit": "%",
+          "reference_range": "36-46",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 78.42,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-15",
+      "values": [
+        {
+          "test_name": "Platelets",
+          "value": 329.62,
+          "unit": "K/uL",
+          "reference_range": "150-450",
+          "status": "normal"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 106.18,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hematocrit",
+          "value": 39.97,
+          "unit": "%",
+          "reference_range": "36-46",
+          "status": "normal"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.88,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "status": "normal"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 88.53,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "status": "normal"
+        },
+        {
+          "test_name": "White Blood Cells",
+          "value": 9.33,
+          "unit": "K/uL",
+          "reference_range": "4.5-11.0",
+          "status": "normal"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 55.86,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "status": "normal"
+        },
+        {
+          "test_name": "Total Cholesterol",
+          "value": 92.38,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 90.37,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.57,
+          "unit": "g/dL",
+          "reference_range": "12.0-15.5",
+          "status": "normal"
+        }
+      ]
+    }
+  ],
+  "ordering_physician": {
+    "name": "Mackenzie Craig",
+    "npi": "4478669092",
+    "specialty": "Cardiology"
+  },
+  "clinical_notes": "Elevated HDL Cholesterol: 97.88 mg/dL (normal: >40). CRITICAL value for Creatinine: 0.39 mg/dL (normal: 0.6-1.2). Immediate attention required. Recommend consultation with primary care physician."
+}

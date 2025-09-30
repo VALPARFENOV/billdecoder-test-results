@@ -1,0 +1,57 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "City General Hospital",
+    "npi": "4567890123",
+    "specialty": "Emergency Medicine"
+  },
+  "patient": {
+    "name": "Eric Hess",
+    "dob": "1948-03-19",
+    "member_id": "Tev8966829",
+    "address": "23819 Tina Bypass Apt. 832\nPort Josestad, CA 49833"
+  },
+  "insurance": {
+    "company": {
+      "name": "Aetna",
+      "code": "AET"
+    },
+    "policy_number": "POL2702163",
+    "group_number": "GRP21365"
+  },
+  "service_date": "2025-09-03",
+  "billing_date": "2025-09-20",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 22.44,
+      "quantity": 1,
+      "date": "2025-09-29"
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "charge": 208.53,
+      "quantity": 1,
+      "date": "2025-09-13"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 230.97,
+    "insurance_payment": 167.78,
+    "patient_responsibility": 63.19,
+    "deductible": 288.18,
+    "copay": 36.29
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "Z00.00",
+      "85025"
+    ],
+    "procedure_codes": [
+      "36415",
+      "99214"
+    ]
+  }
+}

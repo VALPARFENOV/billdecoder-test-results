@@ -1,0 +1,67 @@
+
+MEDICAL BILL
+
+Provider: CardioPlus Clinic
+NPI: 2345678901
+Specialty: Cardiology
+
+Patient: Robert Vargas
+Date of Birth: 1950-11-08
+Member ID: OKT5212377
+Address: 12079 Shannon Via Suite 480
+Hollyville, NY 34957
+
+Insurance Company: Anthem
+Policy Number: POL8991760
+Group Number: GRP23768
+
+Service Date: 2025-09-27
+Billing Date: 2025-09-28
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-14
+Quantity: 1
+Charge: $25.24
+
+Code: 99214
+Description: Detailed office visit
+Date: 2025-09-16
+Quantity: 1
+Charge: $230.19
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-26
+Quantity: 1
+Charge: $60.02
+
+Code: 99284
+Description: Emergency department visit, level 4
+Date: 2025-09-13
+Quantity: 3
+Charge: $650.39
+
+Code: 80053
+Description: Comprehensive metabolic panel
+Date: 2025-09-17
+Quantity: 1
+Charge: $108.25
+
+Code: 99285
+Description: Emergency department visit, level 5
+Date: 2025-09-08
+Quantity: 1
+Charge: $972.17
+
+FINANCIAL SUMMARY:
+Total Charges: $2046.26
+Insurance Payment: $1528.6
+Patient Responsibility: $517.66
+Deductible: $260.82
+Copay: $47.52
+
+Diagnosis Codes: Z00.00
+Procedure Codes: 36415, 99214, 85025, 99284, 80053, 99285

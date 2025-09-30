@@ -1,0 +1,116 @@
+services:
+  # Основной контейнер для тестирования
+  prompt-tester:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - HATHR_CLIENT_ID=${HATHR_CLIENT_ID}
+      - HATHR_CLIENT_SECRET=${HATHR_CLIENT_SECRET}
+      - HATHR_SCOPE=hathr/llm
+      - HATHR_TOKEN_URL=https://hathr.auth-fips.us-gov-west-1.amazoncognito.com/oauth2/token
+      - HATHR_API_URL=https://api.hathr.ai/v1/chat
+    volumes:
+      - ./test-data:/app/test-data
+      - ./test-results:/app/test-results
+      - ./scripts:/app/scripts
+    networks:
+      - test-network
+    depends_on:
+      - test-database
+    command: ["python", "automated-test-runner.py"]
+
+  # База данных для хранения результатов тестов
+  test-database:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=test_results
+      - POSTGRES_USER=test_user
+      - POSTGRES_PASSWORD=test_password
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8
+    volumes:
+      - test_db_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - test-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test_user -d test_results"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis для кэширования и очередей
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - test-network
+    command: redis-server --appendonly yes
+
+  # Веб-дашборд для просмотра результатов
+  test-dashboard:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./test-dashboard:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - test-network
+    depends_on:
+      - prompt-tester
+
+  # Мониторинг и логирование
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - test-network
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - test-network
+    depends_on:
+      - prometheus
+
+networks:
+  test-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  test_db_data:
+    driver: local
+  redis_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local

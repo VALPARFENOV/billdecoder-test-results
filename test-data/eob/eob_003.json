@@ -1,0 +1,63 @@
+{
+  "document_type": "eob",
+  "insurance_company": {
+    "name": "Kaiser Permanente",
+    "code": "KP"
+  },
+  "patient": {
+    "name": "Monica Jacobson",
+    "dob": "1951-09-19",
+    "member_id": "AKs6147058",
+    "address": "PSC 4426, Box 9355\nAPO AA 66927"
+  },
+  "provider": {
+    "name": "Family Practice Associates",
+    "npi": "6789012345",
+    "specialty": "Family Medicine"
+  },
+  "service_date": "2025-09-21",
+  "processed_date": "2025-09-27",
+  "claim_number": "CLM1327449",
+  "services": [
+    {
+      "code": "99213",
+      "description": "Office visit",
+      "date": "2025-09-03",
+      "billed_amount": 170.64,
+      "insurance_payment": 151.38,
+      "patient_responsibility": 19.26,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "80053",
+      "description": "Basic metabolic panel",
+      "date": "2025-09-12",
+      "billed_amount": 84.72,
+      "insurance_payment": 63.65,
+      "patient_responsibility": 21.07,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "99214",
+      "description": "Detailed office visit",
+      "date": "2025-09-11",
+      "billed_amount": 181.28,
+      "insurance_payment": 135.33,
+      "patient_responsibility": 45.95,
+      "coverage_status": "covered",
+      "denial_reason": null
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "date": "2025-09-22",
+      "billed_amount": 65.55,
+      "insurance_payment": 56.61,
+      "patient_responsibility": 8.94,
+      "coverage_status": "covered",
+      "denial_reason": null
+    }
+  ]
+}

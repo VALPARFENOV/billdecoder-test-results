@@ -1,0 +1,84 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Eric Mckinney
+Date of Birth: 1977-06-14
+Gender: F
+Member ID: gUc9595408
+
+Test Date: 2025-09-25
+Report Date: 2025-09-28
+
+Ordering Physician: Charles Murphy
+NPI: 2545252560
+Specialty: Internal Medicine
+
+RESULTS:
+
+✅ Glucose: 77.06 mg/dL (normal: 70-100)
+
+❌ Total Cholesterol: 197.86 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 59.44 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 89.83 mg/dL (normal: <100)
+
+✅ Triglycerides: 79.4 mg/dL (normal: <150)
+
+✅ Hemoglobin: 13.03 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 37.38 % (normal: 36-46)
+
+✅ White Blood Cells: 7.85 K/uL (normal: 4.5-11.0)
+
+❌ Platelets: 85.49 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.83 mg/dL (normal: 0.6-1.2)
+
+✅ ALT: 46.04 U/L (normal: 7-56)
+
+⚠️ AST: 23.03 U/L (normal: 10-40)
+
+❌ TSH: 7.15 mIU/L (normal: 0.4-4.0)
+
+✅ Free T4: 1.09 ng/dL (normal: 0.8-1.8)
+
+TREND DATA:
+
+Date: 2025-06-27
+  AST: 21.89 U/L
+  Triglycerides: 58.43 mg/dL
+  Total Cholesterol: 161.02 mg/dL
+  Glucose: 85.07 mg/dL
+  Hematocrit: 38.43 %
+  Creatinine: 0.6 mg/dL
+
+Date: 2025-03-29
+  Triglycerides: 120.11 mg/dL
+  Hemoglobin: 13.76 g/dL
+  AST: 13.5 U/L
+
+Date: 2024-12-29
+  ALT: 7.35 U/L
+  AST: 10.95 U/L
+  Total Cholesterol: 77.78 mg/dL
+  HDL Cholesterol: 51.32 mg/dL
+  Free T4: 1.57 ng/dL
+  LDL Cholesterol: 81.11 mg/dL
+  Hematocrit: 42.57 %
+  TSH: 2.6 mIU/L
+  Platelets: 379.69 K/uL
+
+Date: 2024-09-30
+  LDL Cholesterol: 69.53 mg/dL
+  Platelets: 211.2 K/uL
+  Hematocrit: 45.3 %
+  White Blood Cells: 7.67 K/uL
+  Glucose: 99.26 mg/dL
+  AST: 11.39 U/L
+
+CLINICAL NOTES:
+CRITICAL value for Total Cholesterol: 197.86 mg/dL (normal: <200). Immediate attention required. CRITICAL value for Platelets: 85.49 K/uL (normal: 150-450). Immediate attention required. Low AST: 23.03 U/L (normal: 10-40). CRITICAL value for TSH: 7.15 mIU/L (normal: 0.4-4.0). Immediate attention required. Recommend consultation with primary care physician.

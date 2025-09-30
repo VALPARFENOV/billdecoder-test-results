@@ -1,0 +1,123 @@
+{
+  "document_type": "lab_results",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "Alexis Jackson",
+    "dob": "2004-08-28",
+    "member_id": "kui6508077",
+    "gender": "F"
+  },
+  "test_date": "2025-09-14",
+  "report_date": "2025-09-22",
+  "lab_values": [
+    {
+      "test_name": "Glucose",
+      "value": 84.08,
+      "unit": "mg/dL",
+      "reference_range": "70-100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Total Cholesterol",
+      "value": 128.39,
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "status": "normal"
+    },
+    {
+      "test_name": "HDL Cholesterol",
+      "value": 55.84,
+      "unit": "mg/dL",
+      "reference_range": ">40",
+      "status": "normal"
+    },
+    {
+      "test_name": "LDL Cholesterol",
+      "value": 70.19,
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "status": "critical"
+    },
+    {
+      "test_name": "Triglycerides",
+      "value": 58.97,
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 5.96,
+      "unit": "g/dL",
+      "reference_range": "12.0-15.5",
+      "status": "critical"
+    },
+    {
+      "test_name": "Hematocrit",
+      "value": 99.5,
+      "unit": "%",
+      "reference_range": "36-46",
+      "status": "critical"
+    },
+    {
+      "test_name": "White Blood Cells",
+      "value": 9.84,
+      "unit": "K/uL",
+      "reference_range": "4.5-11.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Platelets",
+      "value": 405.34,
+      "unit": "K/uL",
+      "reference_range": "150-450",
+      "status": "normal"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 0.83,
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.2",
+      "status": "normal"
+    },
+    {
+      "test_name": "ALT",
+      "value": 20.82,
+      "unit": "U/L",
+      "reference_range": "7-56",
+      "status": "normal"
+    },
+    {
+      "test_name": "AST",
+      "value": 10.13,
+      "unit": "U/L",
+      "reference_range": "10-40",
+      "status": "normal"
+    },
+    {
+      "test_name": "TSH",
+      "value": 2.53,
+      "unit": "mIU/L",
+      "reference_range": "0.4-4.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Free T4",
+      "value": 1.75,
+      "unit": "ng/dL",
+      "reference_range": "0.8-1.8",
+      "status": "normal"
+    }
+  ],
+  "trend_data": [],
+  "ordering_physician": {
+    "name": "James Thomas",
+    "npi": "2689897041",
+    "specialty": "Endocrinology"
+  },
+  "clinical_notes": "Elevated LDL Cholesterol: 70.19 mg/dL (normal: <100). CRITICAL value for Hemoglobin: 5.96 g/dL (normal: 12.0-15.5). Immediate attention required. Elevated Hematocrit: 99.5 % (normal: 36-46). Recommend consultation with primary care physician."
+}

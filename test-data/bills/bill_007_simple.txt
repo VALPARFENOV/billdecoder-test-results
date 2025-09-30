@@ -1,0 +1,43 @@
+
+MEDICAL BILL
+
+Provider: Family Practice Associates
+NPI: 6789012345
+Specialty: Family Medicine
+
+Patient: Glenn Perkins
+Date of Birth: 1963-03-01
+Member ID: oCb0274541
+Address: 21614 Patricia Centers Suite 813
+North Lisa, OH 55712
+
+Insurance Company: Humana
+Policy Number: POL4741657
+Group Number: GRP54035
+
+Service Date: 2025-09-18
+Billing Date: 2025-09-28
+
+SERVICES:
+
+Code: 80053
+Description: Basic metabolic panel
+Date: 2025-09-03
+Quantity: 1
+Charge: $74.03
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-12
+Quantity: 1
+Charge: $178.65
+
+FINANCIAL SUMMARY:
+Total Charges: $252.68
+Insurance Payment: $198.69
+Patient Responsibility: $53.99
+Deductible: $11.18
+Copay: $34.99
+
+Diagnosis Codes: M79.3
+Procedure Codes: 80053, 99213

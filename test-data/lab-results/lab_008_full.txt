@@ -1,0 +1,86 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Tara Taylor
+Date of Birth: 1983-07-31
+Gender: M
+Member ID: Oyt2859409
+
+Test Date: 2025-09-29
+Report Date: 2025-09-29
+
+Ordering Physician: Amy Wyatt
+NPI: 1669597224
+Specialty: Family Medicine
+
+RESULTS:
+
+✅ Glucose: 82.04 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 170.7 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 51.96 mg/dL (normal: >40)
+
+✅ LDL Cholesterol: 38.57 mg/dL (normal: <100)
+
+✅ Triglycerides: 105.14 mg/dL (normal: <150)
+
+✅ Hemoglobin: 15.0 g/dL (normal: 12.0-15.5)
+
+✅ Hematocrit: 39.54 % (normal: 36-46)
+
+✅ White Blood Cells: 8.32 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 242.3 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.96 mg/dL (normal: 0.6-1.2)
+
+✅ ALT: 27.64 U/L (normal: 7-56)
+
+✅ AST: 17.08 U/L (normal: 10-40)
+
+✅ TSH: 0.67 mIU/L (normal: 0.4-4.0)
+
+✅ Free T4: 1.33 ng/dL (normal: 0.8-1.8)
+
+TREND DATA:
+
+Date: 2025-07-01
+  Free T4: 1.19 ng/dL
+  White Blood Cells: 9.16 K/uL
+  Hemoglobin: 13.08 g/dL
+  HDL Cholesterol: 50.21 mg/dL
+  Total Cholesterol: 128.83 mg/dL
+  Platelets: 293.11 K/uL
+
+Date: 2025-04-02
+  LDL Cholesterol: 54.74 mg/dL
+  Hemoglobin: 13.35 g/dL
+  Glucose: 81.73 mg/dL
+  Total Cholesterol: 98.19 mg/dL
+
+Date: 2025-01-02
+  Total Cholesterol: 157.86 mg/dL
+  Free T4: 1.58 ng/dL
+  Glucose: 93.22 mg/dL
+  Hematocrit: 40.59 %
+
+Date: 2024-10-04
+  Hemoglobin: 14.59 g/dL
+  Glucose: 76.87 mg/dL
+  Hematocrit: 45.77 %
+  TSH: 3.1 mIU/L
+  Creatinine: 0.97 mg/dL
+  Free T4: 1.31 ng/dL
+  LDL Cholesterol: 35.15 mg/dL
+  White Blood Cells: 4.68 K/uL
+  Triglycerides: 76.2 mg/dL
+  Platelets: 390.92 K/uL
+  AST: 25.43 U/L
+  HDL Cholesterol: 47.58 mg/dL
+
+CLINICAL NOTES:
+All laboratory values are within normal limits. Continue current treatment as prescribed.

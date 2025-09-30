@@ -1,0 +1,43 @@
+
+MEDICAL BILL
+
+Provider: Metro Urgent Care
+NPI: 7890123456
+Specialty: Urgent Care
+
+Patient: Phillip Adkins
+Date of Birth: 1965-02-12
+Member ID: gnT7211738
+Address: 96786 Howell Via Apt. 634
+Port Michaelborough, MI 31608
+
+Insurance Company: Medicare
+Policy Number: POL8756235
+Group Number: GRP32073
+
+Service Date: 2025-09-12
+Billing Date: 2025-09-21
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-05
+Quantity: 1
+Charge: $25.68
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-20
+Quantity: 1
+Charge: $54.56
+
+FINANCIAL SUMMARY:
+Total Charges: $80.24
+Insurance Payment: $69.76
+Patient Responsibility: $10.48
+Deductible: $294.08
+Copay: $14.98
+
+Diagnosis Codes: I10, 99213, 36415
+Procedure Codes: 36415, 85025

@@ -1,0 +1,80 @@
+{
+  "document_type": "medical_bill",
+  "provider": {
+    "name": "HealthCare Medical Center",
+    "npi": "1234567890",
+    "specialty": "Internal Medicine"
+  },
+  "patient": {
+    "name": "Matthew Maynard",
+    "dob": "2004-12-28",
+    "member_id": "sFP1331809",
+    "address": "466 Mason Unions Apt. 646\nClaytonborough, GA 74593"
+  },
+  "insurance": {
+    "company": {
+      "name": "Kaiser Permanente",
+      "code": "KP"
+    },
+    "policy_number": "POL7850164",
+    "group_number": "GRP76631"
+  },
+  "service_date": "2025-09-22",
+  "billing_date": "2025-09-22",
+  "services": [
+    {
+      "code": "36415",
+      "description": "Venipuncture",
+      "charge": 23.6,
+      "quantity": 1,
+      "date": "2025-09-02"
+    },
+    {
+      "code": "85025",
+      "description": "Complete blood count",
+      "charge": 61.78,
+      "quantity": 1,
+      "date": "2025-09-07"
+    },
+    {
+      "code": "80053",
+      "description": "Comprehensive metabolic panel",
+      "charge": 114.02,
+      "quantity": 1,
+      "date": "2025-09-13"
+    },
+    {
+      "code": "36415",
+      "description": "Additional venipuncture",
+      "charge": 28.54,
+      "quantity": 2,
+      "date": "2025-09-11"
+    },
+    {
+      "code": "99285",
+      "description": "Emergency department visit, level 5",
+      "charge": 1268.95,
+      "quantity": 3,
+      "date": "2025-09-29"
+    }
+  ],
+  "financial_summary": {
+    "total_charges": 1496.89,
+    "insurance_payment": 1242.95,
+    "patient_responsibility": 253.94,
+    "deductible": 262.64,
+    "copay": 40.59
+  },
+  "billing_codes": {
+    "diagnosis_codes": [
+      "93000"
+    ],
+    "procedure_codes": [
+      "36415",
+      "85025",
+      "80053",
+      "36415",
+      "99285"
+    ]
+  }
+}

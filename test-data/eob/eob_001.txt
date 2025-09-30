@@ -1,0 +1,30 @@
+
+EXPLANATION OF BENEFITS (EOB)
+
+Insurance Company: Aetna
+Claim Number: CLM2663155
+
+Patient: Brett Moses
+Member ID: UeO3454781
+
+Provider: Regional Medical Group
+NPI: 8901234567
+
+Service Date: 2025-09-25
+Processed Date: 2025-09-29
+
+COVERAGE DETAILS:
+
+✅ Code: 80053
+   Description: Basic metabolic panel
+   Date: 2025-09-14
+   Billed Amount: $78.99
+   Insurance Payment: $59.55
+   Patient Responsibility: $19.44
+
+✅ Code: 93000
+   Description: Electrocardiogram
+   Date: 2025-09-09
+   Billed Amount: $44.4
+   Insurance Payment: $33.65
+   Patient Responsibility: $10.75

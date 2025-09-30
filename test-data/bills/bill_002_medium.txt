@@ -1,0 +1,43 @@
+
+MEDICAL BILL
+
+Provider: City General Hospital
+NPI: 4567890123
+Specialty: Emergency Medicine
+
+Patient: Eric Hess
+Date of Birth: 1948-03-19
+Member ID: Tev8966829
+Address: 23819 Tina Bypass Apt. 832
+Port Josestad, CA 49833
+
+Insurance Company: Aetna
+Policy Number: POL2702163
+Group Number: GRP21365
+
+Service Date: 2025-09-03
+Billing Date: 2025-09-20
+
+SERVICES:
+
+Code: 36415
+Description: Venipuncture
+Date: 2025-09-29
+Quantity: 1
+Charge: $22.44
+
+Code: 99214
+Description: Detailed office visit
+Date: 2025-09-13
+Quantity: 1
+Charge: $208.53
+
+FINANCIAL SUMMARY:
+Total Charges: $230.97
+Insurance Payment: $167.78
+Patient Responsibility: $63.19
+Deductible: $288.18
+Copay: $36.29
+
+Diagnosis Codes: Z00.00, 85025
+Procedure Codes: 36415, 99214

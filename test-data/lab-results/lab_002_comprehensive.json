@@ -1,0 +1,95 @@
+{
+  "document_type": "lab_results",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "James Davis",
+    "dob": "2005-04-17",
+    "member_id": "ygv2977867",
+    "gender": "F"
+  },
+  "test_date": "2025-09-22",
+  "report_date": "2025-09-26",
+  "lab_values": [
+    {
+      "test_name": "Glucose",
+      "value": 95.34,
+      "unit": "mg/dL",
+      "reference_range": "70-100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Total Cholesterol",
+      "value": 115.61,
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "status": "normal"
+    },
+    {
+      "test_name": "HDL Cholesterol",
+      "value": 54.64,
+      "unit": "mg/dL",
+      "reference_range": ">40",
+      "status": "normal"
+    },
+    {
+      "test_name": "LDL Cholesterol",
+      "value": 68.12,
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Triglycerides",
+      "value": 55.69,
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 15.49,
+      "unit": "g/dL",
+      "reference_range": "12.0-15.5",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hematocrit",
+      "value": 40.63,
+      "unit": "%",
+      "reference_range": "36-46",
+      "status": "normal"
+    },
+    {
+      "test_name": "White Blood Cells",
+      "value": 6.3,
+      "unit": "K/uL",
+      "reference_range": "4.5-11.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Platelets",
+      "value": 421.68,
+      "unit": "K/uL",
+      "reference_range": "150-450",
+      "status": "normal"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 0.7,
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.2",
+      "status": "normal"
+    }
+  ],
+  "trend_data": [],
+  "ordering_physician": {
+    "name": "Mrs. Sharon Arroyo MD",
+    "npi": "4011210765",
+    "specialty": "Family Medicine"
+  },
+  "clinical_notes": "All laboratory values are within normal limits. Continue current treatment as prescribed."
+}

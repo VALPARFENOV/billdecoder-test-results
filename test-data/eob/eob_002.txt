@@ -1,0 +1,37 @@
+
+EXPLANATION OF BENEFITS (EOB)
+
+Insurance Company: Aetna
+Claim Number: CLM9290291
+
+Patient: Katherine Melton
+Member ID: DhZ6815607
+
+Provider: Family Practice Associates
+NPI: 6789012345
+
+Service Date: 2025-09-21
+Processed Date: 2025-09-21
+
+COVERAGE DETAILS:
+
+✅ Code: 80053
+   Description: Basic metabolic panel
+   Date: 2025-09-28
+   Billed Amount: $73.69
+   Insurance Payment: $59.53
+   Patient Responsibility: $14.16
+
+✅ Code: 36415
+   Description: Venipuncture
+   Date: 2025-09-24
+   Billed Amount: $20.34
+   Insurance Payment: $16.6
+   Patient Responsibility: $3.74
+
+✅ Code: 85025
+   Description: Complete blood count
+   Date: 2025-09-18
+   Billed Amount: $53.21
+   Insurance Payment: $42.82
+   Patient Responsibility: $10.39

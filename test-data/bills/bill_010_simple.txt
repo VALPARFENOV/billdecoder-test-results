@@ -1,0 +1,37 @@
+
+MEDICAL BILL
+
+Provider: Family Practice Associates
+NPI: 6789012345
+Specialty: Family Medicine
+
+Patient: Sharon Maldonado
+Date of Birth: 1996-04-10
+Member ID: Ygr1932575
+Address: 2928 Alicia Parkway
+Wagnershire, MO 23549
+
+Insurance Company: Aetna
+Policy Number: POL6602044
+Group Number: GRP50065
+
+Service Date: 2025-09-18
+Billing Date: 2025-09-18
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-18
+Quantity: 1
+Charge: $150.91
+
+FINANCIAL SUMMARY:
+Total Charges: $150.91
+Insurance Payment: $97.79
+Patient Responsibility: $53.12
+Deductible: $374.69
+Copay: $8.56
+
+Diagnosis Codes: 99285
+Procedure Codes: 99213

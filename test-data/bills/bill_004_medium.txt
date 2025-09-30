@@ -1,0 +1,49 @@
+
+MEDICAL BILL
+
+Provider: Family Practice Associates
+NPI: 6789012345
+Specialty: Family Medicine
+
+Patient: Mason Rose
+Date of Birth: 1950-01-27
+Member ID: gUs0014431
+Address: 6024 Manning Valleys
+South Jason, SC 22369
+
+Insurance Company: Anthem
+Policy Number: POL1356486
+Group Number: GRP93999
+
+Service Date: 2025-08-31
+Billing Date: 2025-08-31
+
+SERVICES:
+
+Code: 99213
+Description: Office visit
+Date: 2025-09-23
+Quantity: 1
+Charge: $147.98
+
+Code: 99214
+Description: Detailed office visit
+Date: 2025-09-06
+Quantity: 1
+Charge: $213.01
+
+Code: 85025
+Description: Complete blood count
+Date: 2025-09-14
+Quantity: 1
+Charge: $53.39
+
+FINANCIAL SUMMARY:
+Total Charges: $414.38
+Insurance Payment: $329.32
+Patient Responsibility: $85.06
+Deductible: $335.12
+Copay: $32.15
+
+Diagnosis Codes: R50.9, 99214
+Procedure Codes: 99213, 99214, 85025

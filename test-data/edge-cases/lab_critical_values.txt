@@ -1,0 +1,50 @@
+
+LABORATORY RESULTS
+
+Laboratory: LabCorp Diagnostics
+NPI: 3456789012
+
+Patient: Alexis Jackson
+Date of Birth: 2004-08-28
+Gender: F
+Member ID: kui6508077
+
+Test Date: 2025-09-14
+Report Date: 2025-09-22
+
+Ordering Physician: James Thomas
+NPI: 2689897041
+Specialty: Endocrinology
+
+RESULTS:
+
+✅ Glucose: 84.08 mg/dL (normal: 70-100)
+
+✅ Total Cholesterol: 128.39 mg/dL (normal: <200)
+
+✅ HDL Cholesterol: 55.84 mg/dL (normal: >40)
+
+❌ LDL Cholesterol: 70.19 mg/dL (normal: <100)
+
+✅ Triglycerides: 58.97 mg/dL (normal: <150)
+
+❌ Hemoglobin: 5.96 g/dL (normal: 12.0-15.5)
+
+❌ Hematocrit: 99.5 % (normal: 36-46)
+
+✅ White Blood Cells: 9.84 K/uL (normal: 4.5-11.0)
+
+✅ Platelets: 405.34 K/uL (normal: 150-450)
+
+✅ Creatinine: 0.83 mg/dL (normal: 0.6-1.2)
+
+✅ ALT: 20.82 U/L (normal: 7-56)
+
+✅ AST: 10.13 U/L (normal: 10-40)
+
+✅ TSH: 2.53 mIU/L (normal: 0.4-4.0)
+
+✅ Free T4: 1.75 ng/dL (normal: 0.8-1.8)
+
+CLINICAL NOTES:
+Elevated LDL Cholesterol: 70.19 mg/dL (normal: <100). CRITICAL value for Hemoglobin: 5.96 g/dL (normal: 12.0-15.5). Immediate attention required. Elevated Hematocrit: 99.5 % (normal: 36-46). Recommend consultation with primary care physician.

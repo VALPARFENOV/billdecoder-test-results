@@ -1,0 +1,326 @@
+{
+  "document_type": "lab_results",
+  "provider": {
+    "name": "LabCorp Diagnostics",
+    "npi": "3456789012",
+    "specialty": "Laboratory Services"
+  },
+  "patient": {
+    "name": "Tara Taylor",
+    "dob": "1983-07-31",
+    "member_id": "Oyt2859409",
+    "gender": "M"
+  },
+  "test_date": "2025-09-29",
+  "report_date": "2025-09-29",
+  "lab_values": [
+    {
+      "test_name": "Glucose",
+      "value": 82.04,
+      "unit": "mg/dL",
+      "reference_range": "70-100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Total Cholesterol",
+      "value": 170.7,
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "status": "normal"
+    },
+    {
+      "test_name": "HDL Cholesterol",
+      "value": 51.96,
+      "unit": "mg/dL",
+      "reference_range": ">40",
+      "status": "normal"
+    },
+    {
+      "test_name": "LDL Cholesterol",
+      "value": 38.57,
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "status": "normal"
+    },
+    {
+      "test_name": "Triglycerides",
+      "value": 105.14,
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hemoglobin",
+      "value": 15.0,
+      "unit": "g/dL",
+      "reference_range": "12.0-15.5",
+      "status": "normal"
+    },
+    {
+      "test_name": "Hematocrit",
+      "value": 39.54,
+      "unit": "%",
+      "reference_range": "36-46",
+      "status": "normal"
+    },
+    {
+      "test_name": "White Blood Cells",
+      "value": 8.32,
+      "unit": "K/uL",
+      "reference_range": "4.5-11.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Platelets",
+      "value": 242.3,
+      "unit": "K/uL",
+      "reference_range": "150-450",
+      "status": "normal"
+    },
+    {
+      "test_name": "Creatinine",
+      "value": 0.96,
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.2",
+      "status": "normal"
+    },
+    {
+      "test_name": "ALT",
+      "value": 27.64,
+      "unit": "U/L",
+      "reference_range": "7-56",
+      "status": "normal"
+    },
+    {
+      "test_name": "AST",
+      "value": 17.08,
+      "unit": "U/L",
+      "reference_range": "10-40",
+      "status": "normal"
+    },
+    {
+      "test_name": "TSH",
+      "value": 0.67,
+      "unit": "mIU/L",
+      "reference_range": "0.4-4.0",
+      "status": "normal"
+    },
+    {
+      "test_name": "Free T4",
+      "value": 1.33,
+      "unit": "ng/dL",
+      "reference_range": "0.8-1.8",
+      "status": "normal"
+    }
+  ],
+  "trend_data": [
+    {
+      "date": "2025-07-01",
+      "values": [
+        {
+          "test_name": "Free T4",
+          "value": 1.19,
+          "unit": "ng/dL",
+          "reference_range": "0.8-1.8",
+          "status": "normal"
+        },
+        {
+          "test_name": "White Blood Cells",
+          "value": 9.16,
+          "unit": "K/uL",
+          "reference_range": "4.5-11.0",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.08,
+          "unit": "g/dL",
+          "reference_range": "12.0-15.5",
+          "status": "normal"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 50.21,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "status": "normal"
+        },
+        {
+          "test_name": "Total Cholesterol",
+          "value": 128.83,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "status": "normal"
+        },
+        {
+          "test_name": "Platelets",
+          "value": 293.11,
+          "unit": "K/uL",
+          "reference_range": "150-450",
+          "status": "normal"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-02",
+      "values": [
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 54.74,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.35,
+          "unit": "g/dL",
+          "reference_range": "12.0-15.5",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 81.73,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Total Cholesterol",
+          "value": 98.19,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "status": "normal"
+        }
+      ]
+    },
+    {
+      "date": "2025-01-02",
+      "values": [
+        {
+          "test_name": "Total Cholesterol",
+          "value": 157.86,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "status": "normal"
+        },
+        {
+          "test_name": "Free T4",
+          "value": 1.58,
+          "unit": "ng/dL",
+          "reference_range": "0.8-1.8",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 93.22,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hematocrit",
+          "value": 40.59,
+          "unit": "%",
+          "reference_range": "36-46",
+          "status": "normal"
+        }
+      ]
+    },
+    {
+      "date": "2024-10-04",
+      "values": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.59,
+          "unit": "g/dL",
+          "reference_range": "12.0-15.5",
+          "status": "normal"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 76.87,
+          "unit": "mg/dL",
+          "reference_range": "70-100",
+          "status": "normal"
+        },
+        {
+          "test_name": "Hematocrit",
+          "value": 45.77,
+          "unit": "%",
+          "reference_range": "36-46",
+          "status": "normal"
+        },
+        {
+          "test_name": "TSH",
+          "value": 3.1,
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "status": "normal"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.97,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "status": "normal"
+        },
+        {
+          "test_name": "Free T4",
+          "value": 1.31,
+          "unit": "ng/dL",
+          "reference_range": "0.8-1.8",
+          "status": "normal"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 35.15,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "status": "normal"
+        },
+        {
+          "test_name": "White Blood Cells",
+          "value": 4.68,
+          "unit": "K/uL",
+          "reference_range": "4.5-11.0",
+          "status": "normal"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 76.2,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "status": "normal"
+        },
+        {
+          "test_name": "Platelets",
+          "value": 390.92,
+          "unit": "K/uL",
+          "reference_range": "150-450",
+          "status": "normal"
+        },
+        {
+          "test_name": "AST",
+          "value": 25.43,
+          "unit": "U/L",
+          "reference_range": "10-40",
+          "status": "normal"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 47.58,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "status": "normal"
+        }
+      ]
+    }
+  ],
+  "ordering_physician": {
+    "name": "Amy Wyatt",
+    "npi": "1669597224",
+    "specialty": "Family Medicine"
+  },
+  "clinical_notes": "All laboratory values are within normal limits. Continue current treatment as prescribed."
+}
